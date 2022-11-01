@@ -200,7 +200,7 @@ body{
     margin-bottom: 120px;
 }
 .containerContent img{
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 80px 80px 0;
     box-shadow: #ccc 0px 0px 10px ;
     width: 60%;
 }

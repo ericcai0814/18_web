@@ -68,10 +68,46 @@ body{
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
 }
-.wrap a{
+.firstContainer_wrapper_wrap_click{
     text-decoration: none;
+
+    position: relative;
 }   
 
+.wrap .uunderline::before{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #fa0;
+
+    position: absolute;
+    top: 25px;
+    left: 0;
+    transition: .5s;
+}
+.firstContainer_wrapper_wrap_click:hover .underline::before{
+    content: "";
+    display: block;
+    width: 270px;
+    height: 2px;
+    background: #fa0;
+
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+.short:hover .underline::before{
+    content: "";
+    display: block;
+    width: 220px;
+    height: 2px;
+    background: #fa0;
+
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
 
 /* -------------環境圖片--------------- */
 .store_pic{

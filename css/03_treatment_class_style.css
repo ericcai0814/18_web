@@ -88,6 +88,36 @@ body{
     border-bottom: 1px solid #ccc;
 }
 
+.firstContainer_wrapper_wrap_click{
+    text-decoration: none;
+
+    position: relative;
+}
+
+.wrap .uunderline::before{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #fa0;
+
+    position: absolute;
+    top: 25px;
+    left: 0;
+    transition: .5s;
+}
+.firstContainer_wrapper_wrap_click:hover .underline::before{
+    content: "";
+    display: block;
+    width: 95px;
+    height: 2px;
+    background: #fa0;
+
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
 /* ============================== */
 /* ----------- banner ----------- */
 /* ============================== */
