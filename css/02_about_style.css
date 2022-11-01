@@ -4,6 +4,7 @@ body{
     background-color: #FFFEF2;
     font-family:Georgia, 'Times New Roman', Times, serif;
     /* background-image: url(../sourse/01.index/bg.png); */
+    
 }
 /* background-color: #EBEADE; */
 .header_bg{
@@ -12,6 +13,7 @@ body{
     background-size: cover;
     width: 100%;
     padding-bottom: 33%;
+    
 }
 
 .top_header_banner_text_wrap{
@@ -48,6 +50,7 @@ body{
 #middle{
     width: 100%;
     margin: 0 auto;
+    
 }
 /* =========================================== */
 /* ----------- AG品牌理念 & 美麗秘密 ---------- */
@@ -189,12 +192,13 @@ body{
 
 .footer_container{
     background-color: #EBEADE;
-    margin: 0 auto 10   0px;
+    margin: 0 auto 10 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 50px;
     box-sizing: border-box;
+    overflow: hidden;
     /* outline: 2px solid black; */
 }
 

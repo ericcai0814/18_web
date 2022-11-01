@@ -19,8 +19,8 @@ body{
     display: block;
     /* outline: 2px solid black; */
     font-size: 90px;
-    width: 400px;
-    height: 200px;
+    width: 500px;
+    height: 100px;
     line-height: 200px;
     margin-left: 10px;
     text-align: start;
@@ -28,8 +28,8 @@ body{
     color: #fff;
 
     position: absolute;
-    top: 51%;
-    left: 36%;
+    top: 49.5%;
+    left: 31%;
 }
 
 
@@ -41,6 +41,7 @@ body{
 #middle{
     width: 100%;
     margin: 0 auto;
+    
 }
 
 /* ------ 選擇療程服務 title ----- */
@@ -173,5 +174,24 @@ body{
     width: 80%;
     text-align: start;
     margin-bottom: 30px;
+}
+
+.Content_text a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background:#15C030;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 50px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.Content_text a:active {
+    background-color: #11641e;
 }
 

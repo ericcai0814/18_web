@@ -150,6 +150,7 @@
     width: 100%;
     height: 500px;
     /* outline: 2px solid black; */
+    overflow: hidden;
 }
 
 .footer_container{
@@ -157,7 +158,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 10px;
     box-sizing: border-box;
     /* outline: 2px solid black; */
 }
