@@ -7,7 +7,7 @@ body{
 }
 
 .header_bg{
-    background-image: url("../sourse/03.treatment_calss/banner1.png");
+    background-image: url("../sourse/03.treatment_calss/header_bg.png");
     background-position: center center;
     background-size: cover;
     width: 100%;
@@ -35,7 +35,7 @@ body{
     color: #fff;
 
     position: absolute;
-    top: 51%;
+    top: 50%;
     left: 36%;
 }
 

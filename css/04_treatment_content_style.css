@@ -44,48 +44,10 @@ body{
     
 }
 
-/* ------ 選擇療程服務 title ----- */
-
-.firstContainer{
-    /* outline: 1px solid black; */
-    max-width: 1280px;
-    margin: 0 auto 50px;
-}
-.wrapper{
-    /* outline: 1px solid black; */
-    width: 50%;
-    margin: 0 auto;
-}
-.wrapper h1{
-    /* outline: 1px solid black; */
-    text-align: center;
-    margin-bottom: 30px;
-
-    position: relative;
-}
-/* 裝飾線 */
-.wrapper h1::after{
-    content: "";
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #333;
-
-    position: absolute;
-    bottom: -5px;
-    left: 46%;
-}
-.wrapper .wrap{
-    /* outline: 1px solid black; */
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-}
-
 /* ============================== */
 /* ----------- banner ----------- */
 /* ============================== */
+
 .banner{
     background-image: url(../sourse/04.treatment_content/banner2.png);
     width: 100%;
@@ -103,6 +65,7 @@ body{
     position: relative;
     /* outline: 1px solid black; */
 }
+
 .container_text{
     display: block;
     width: 500px;
@@ -127,21 +90,104 @@ body{
     padding: 10px;
     /* outline: 2px solid black; */
 }
-/* ----------- vedio ----------- */
-/* video{
-    display: block;
+
+
+/* ------ 選擇療程服務 title ----- */
+
+.firstContainer{
+    /* outline: 1px solid black; */
+    max-width: 1280px;
+    margin: 0 auto 50px;
+}
+.firstContainer_wrapper{
+    /* outline: 1px solid black; */
     width: 50%;
-    padding-bottom: px;
-    margin: 0 auto 100px;
-    border-radius: 10px;
-    box-shadow: #ccc 0 0 20px;
-} */
+    margin: 0 auto;
+}
+.firstContainer_wrapper h1{
+    /* outline: 1px solid black; */
+    text-align: center;
+    margin-bottom: 30px;
 
-/* ============================== */
-/* ------- middle section ------- */
-/* ============================== */
+    position: relative;
+}
+/* 裝飾線 */
+.firstContainer_wrapper h1::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
 
-.container{
+    position: absolute;
+    bottom: -5px;
+    left: 46%;
+}
+.firstContainer_wrapper_wrap{
+    /* outline: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+.firstContainer_wrapper_wrap_click{
+    text-decoration: none;
+    position: relative;
+}
+
+.firstContainer_wrapper_wrap_click .underline::before{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #fa0;
+
+    position: absolute;
+    top: 25px;
+    left: 0;
+    transition: .5s;
+}
+.firstContainer_wrapper_wrap_click:hover .underline::before{
+    content: "";
+    display: block;
+    width: 195px;
+    height: 2px;
+    background: #fa0;
+
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+.firstContainer_wrapper_wrap_click .underline2::before{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #fa0;
+
+    position: absolute;
+    top: 25px;
+    left: 0;
+    transition: .5s;
+}
+.firstContainer_wrapper_wrap_click:hover .underline2::before{
+    content: "";
+    display: block;
+    width: 220px;
+    height: 2px;
+    background: #fa0;
+
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+
+
+
+/* service item  */
+
+.service_container{
     max-width: 1280px;
     margin: 0 auto 150px;
 }
@@ -167,7 +213,7 @@ body{
 }
 
 .Content_text h2{
-    width: 300px;
+    width: 100%;
     margin-bottom: 30px;
 }
 .Content_text p{
@@ -176,7 +222,7 @@ body{
     margin-bottom: 30px;
 }
 
-.Content_text a{
+.containerContent_btn{
     text-decoration: none;
     display: block;
     text-align: center;
@@ -191,7 +237,7 @@ body{
     cursor: pointer;
 }
 
-.Content_text a:active {
+.containerContent_btn:active {
     background-color: #11641e;
 }
 
