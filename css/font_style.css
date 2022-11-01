@@ -1,0 +1,125 @@
+/* @import url('https://fonts.googleapis.com/css2?family= Noto+Sans+TC:wght@300;400 & display =swap');
+
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+} */
+
+/* ------ title的裝飾線 ------ */
+
+.text_left_line{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    background-color: #FF7D00;
+
+    position: absolute;
+    top: 50%;
+    left: 1.5%;
+}
+
+.text_right_line{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    background-color: #FF7D00;
+
+    position: absolute;
+    top: 50%;
+    right: 1.5%;
+}
+/* ------ btn_style ------ */
+.btn_style{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background:#15C030;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 70px;
+    width: 200px;
+    height: 70px;
+}
+/* ------ font_chinese_style ------ */
+
+.h1_style{
+    font-size: 56px;
+    line-height: 61.6px;
+    /* font-weight: 700; */
+    text-align: center;
+    color: #333333;
+}
+.h2_style{
+    font-size: 48px;
+    line-height: 52.8px;
+    /* font-weight: 600; */
+    text-align: center;
+    color: #333333;
+}
+.h3_style{
+    font-size: 40px;
+    line-height: 44px;
+    /* font-weight: 500; */
+    text-align: center;
+    color: #333333;
+}
+.h4_style{
+    font-size: 32px;
+    line-height: 35.2px;
+    /* font-weight: 400; */
+    text-align: center;
+    color: #333333;
+}
+.h5_style{
+    font-size: 24px;
+    line-height: 25.4px;
+    /* font-weight: 400; */
+    text-align: center;
+    color: #333333;
+}
+.h6_style{
+    font-size: 20px;
+    line-height: 22px;
+    /* font-weight: 400; */
+    text-align: center;
+    color: #333333;
+}
+
+
+
+
+.p1_style{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #333333;
+}
+
+.p2_style{
+    font-size: 18px;
+    line-height: 25.2px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #333333;
+}
+
+.p3_style{
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #333333;
+}
+
+.p4_style{
+    font-size: 14px;
+    line-height: 19.6px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #333333;
+}

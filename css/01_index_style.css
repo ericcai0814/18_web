@@ -1,0 +1,755 @@
+@import url("reset.css");
+
+body{
+    background-color: #FFFEF2;
+    font-family: Didot, serif;
+}
+/* background-color: #EBEADE; */
+
+
+.header_bg{
+    background-image: url("../sourse/01.index/header_bg.png");
+    background-position: center left; 
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 12%;
+}
+
+
+/* ================================= */
+/* ----------- navigate ------------ */
+/* ================================= */
+/* 導覽列背景色 */
+.navigate_wrap{
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: inset 0 0 0 500px rgba(255, 254, 242,.5);
+    
+}
+
+/* logo設定 */
+.logo{
+    flex-grow: 1;
+    width: 5%;
+}
+.logo img{
+    display: block;
+    width: 200px;
+    padding-top: 10px; 
+    padding-left: 30px;
+    /* vertical-align: middle; */
+} 
+
+.logo a{
+    display: block;
+    width: 300px;
+    margin-right: 180px;
+}
+
+
+/* 主導覽列位置及寬度 */
+.navigate{
+    max-width: 1280px;
+    display: flex;
+    margin: 0 auto;
+
+    
+}
+
+/* 主導覽flex橫排 */
+.main_nav_wrap{
+    display: flex;
+    flex-grow: 1;
+}
+
+/* 導覽列子層 flex排版 */
+.main_nav{
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+    flex-grow: 1;
+    width: 100px;
+    position: relative;
+    text-align: center;
+    transition: all .4s linear;
+}
+
+.main_nav:hover {
+    background: #FFecd1;
+}
+
+.main_nav a{
+    text-decoration: none;
+    color: #78290F;
+    position: relative;
+}
+
+/* 控制登入及購物車 */
+.main_nav_item{
+    display: flex;
+    align-items: center;
+}
+.main_nav_item_a{
+    display: flex;
+    align-items: center;
+}
+.fa-solid{
+    margin-right: 5px;
+}
+
+
+/* 控制子選單 */
+.sub_nav{
+    display: inline-block;
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 66px;
+    background-color: #ee9d52b8;
+    border-radius: 0px 0px 10px 10px ;
+}
+.sub_nav a {
+    display: block;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+.main_nav:hover .sub_nav{
+    display: block;
+    border-radius: 0px 0px 10px 10px;
+}
+.sub_nav a:hover{
+    display: block;
+    height: 100%;
+    color: #fff;
+    transition: .5s;
+}
+
+
+/* ================================= */
+/* ---------- top_banner_text ------ */
+/* ================================= */
+.top_banner_wrap{
+    
+    max-width: 1280px;
+    height: 300px;
+    margin: 0 auto ;
+    
+    position: relative;
+}
+
+.top_banner_wrap h1{
+    color: #fff;
+    width: 800px;
+    padding-top: 150px;  
+    padding-left: 20px;
+    font-size: 60px;
+    font-weight: 700;
+    text-shadow: #666 0px 0px 1px;
+
+    
+}
+.top_banner_wrap span{
+    padding-top: 30px;  
+    font-size: 60px;
+    font-weight: 700;
+    color: #FF7D00;
+}
+
+.top_banner_wrap h2{
+    font-weight: 600;
+    width: 600px;
+    margin: 20px 0 50px;
+    padding-left: 20px;
+    font-size: 30px;   
+    color: #fff;
+    text-shadow: #666 0px 0px 1px;
+}
+
+.top_banner_wrap a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background:#15C030;
+    color: #fff;
+    border-radius: 20px;
+    margin-left: 20px;
+    font-size: 25px;
+    line-height: 50px;
+    width: 150px;
+    height: 50px;
+}
+.top_banner_wrap a:active {
+    background-color: #11641e;
+}
+.top_banner_wrap_text{
+    position: absolute;
+
+    left: 15px;
+    top: 50px;
+}
+
+
+/* ================================= */
+/* ============= 麵包屑 ============ */
+/* ================================= */
+
+.breadcrumb{
+    
+		display: flex;
+}
+.breadcrumb li {
+	padding: 20px 0px 20px 30px;
+}
+.breadcrumb li:first-child ~li:before {
+	content: "/"; 
+	color: #ccc;
+	padding-right: 20px;
+}
+
+.breadcrumb li:last-child a {
+    color: #FFAA00; 
+    font-weight: 500;
+}
+.breadcrumb li a {
+    color: #333333;
+    font-weight: 100;
+    font-size: 16px;
+    text-decoration: none;
+}
+.breadcrumb li a:hover{
+    color: #ccc;
+}
+
+/* =========================================== */
+/* ------------------ middle_article---------- */
+/* =========================================== */
+
+
+
+#middle{
+    overflow: hidden;
+    width: 100%;
+    /* max-width: 1280px; */
+    margin: 0 auto;
+    
+}
+
+/* 設定article寬為80% */
+.wrapper_middle{
+    width: 100%;
+}
+
+
+
+.first_service_item{
+    margin-bottom: 150px;
+}
+
+.first_service_text_group{
+    position: relative;
+    /* outline: 2px solid black; */
+    
+}
+
+.first_service_text_group h1{
+    text-align: center;
+    margin-top: 150px;
+    font-size: 58px;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+
+
+.first_service_item_group{
+    max-width: 1280px;
+    margin: 0 auto;
+    /* outline: 2px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+.first_service_item_group .item{
+    width: 17%;
+    margin-right: 30px;
+}
+
+.first_service_item_group img{
+    display: block;
+    box-shadow: #ccc 0px 0px 10px ;
+    border-radius: 5px;
+    margin-bottom: 10px;    
+    width: 100%;
+}
+
+.first_service_item_group h3{
+
+    text-align: center;
+    font-size: 38px;
+    letter-spacing: 5px;
+    /* outline: 2px solid black; */
+}
+
+/* ================================== */
+/* ------ second_sercice_item  ------ */
+/* ================================== */
+
+
+
+/* ------ 置中 ------ */
+.second_service_item{
+    display: block;
+    background-color: #EBEADE;
+    margin: 0 auto 220px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* outline: 2px solid black ; */
+}
+
+.second_service_item_group{
+    display: flex;
+    max-width: 1280px;
+    height: 447.08px;
+    gap: 20px;
+    /* outline: 2px solid black; */
+
+}
+.second_service_text_group{
+    position: relative;
+}
+
+/* ------ H1  ------ */
+.second_service_text_group h1{
+    font-weight: 700;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.second_service_text_group h2{
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+/* ------ 圖片  ------ */
+.second_service_item_group img{
+    display: block;
+    border-radius: 10px 10px 0px 0px ;
+    width: 100%;
+}
+
+/* ------ 文字  ------ */
+.text{
+    background-color: #fff;
+    border-radius: 0px 0px 10px 10px;
+    height: 159px;
+    width: 100%;
+}
+.second_service_item_wrap{
+    display: block;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    
+    width: 400px;
+    height: 406px;
+    align-items:center;
+
+    border: 1px solid #ccc;
+}
+.second_service_item_wrap h2{
+    padding-top: 20px;
+    box-sizing: border-box;
+    color: #333333;
+    font-size: 32px;
+    line-height: 25.2px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.second_service_item_wrap p{
+    display: block;
+    
+    width: 320px;
+    text-align: start;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.second_service_item a{
+    display: block;
+    margin: 0px auto ;
+}
+.second_service_item a:active{
+    background-color: #11641e;
+}
+
+/* ------ second_sercice_item end ------ */
+
+/* ===================================== */
+/* -------------- third item ----------- */
+/* ===================================== */
+.third_service_item{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1280px;
+    margin-bottom: 200px;
+    position: relative;
+    /* outline: 2px solid black; */
+}
+
+.third_service_item_wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    flex-grow: 1;
+}
+.third_service_item_wrap h2{
+    width: 550px;
+    box-sizing: border-box;
+    padding: 120px 0px 100px;
+}
+.third_service_item_wrap p{
+    display: block;
+    width: 50%;
+    text-align: start;
+    padding: 10px;
+}
+.third_service_item_wrap a{
+    margin-top: 50px;
+}
+.third_service_item_wrap a:active {
+    background-color: #11641e;
+}
+
+.third_service_item img{
+    box-shadow: #ccc 0px 0px 10px;
+    display: block;
+    width: 50%;
+    border-radius: 5px;
+}
+.third_service_item::after{
+    content: "";
+    width: 400px;
+    height: 400px;
+    background:#FFAA00;
+    position: absolute;
+    top: -100px;
+    right: 0;
+    border-radius: 5px;
+
+    z-index: -1;
+}
+
+/* .spaCenter_pic{
+    background-color: #FF7D00;
+    width: 800px;
+    flex-grow: 1;
+    outline: 2px solid black;     
+    position: relative;
+} 
+*/
+
+
+
+/* -------------------------- four_service_item ------------------------------ */
+
+.four_service_item{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1280px;
+    margin-bottom: 150px;
+    position: relative;
+    /* outline: 2px solid black; */
+}
+
+.four_service_item_wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.four_service_item_wrap h2{
+    width: 550px;
+    box-sizing: border-box;
+    padding: 120px 0px 100px;
+}
+.four_service_item_wrap p{
+    display: block;
+    width: 50%;
+    text-align: start;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+.four_service_item_wrap a:active{
+    background-color:#11641e;
+}
+.four_service_item img{
+    box-shadow: #ccc 0px 0px 10px;
+    display: block;
+    width: 50%;
+    border-radius: 5px;
+}
+.four_service_item::after{
+    content: "";
+    width: 400px;
+    height: 400px;
+    background:#FFAA00;
+    position: absolute;
+    top: -100px;
+    left: 0;
+
+    z-index: -1;
+    border-radius: 5px;
+}
+
+
+
+
+/* ===================================== */
+/* =========== feedback_專區=========== */
+/* ===================================== */
+
+
+
+
+
+/* --------------- feedback_位置控制 --------------- */
+.feedback_container{
+    /* outline: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px auto 150px;
+    height: 550px;
+    max-width: 1280px;
+    position: relative
+}
+/* ------------偽元素 向左翻頁按鈕---------------- */
+.feedback_container::after{
+    content: "";
+    border-color: transparent #FFAA00 transparent transparent;
+    border-style: solid solid solid solid;
+    border-width: 10px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+}
+/* ------------偽元素 向右翻頁按鈕---------------- */
+.feedback_container::before{
+    content: "";
+    border-color: transparent transparent transparent #FFAA00;
+    border-style: solid solid solid solid;
+    border-width: 10px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 70%;
+    right: 5%;
+}
+/* ------------------- feedback_title --------------- */
+.textcontent{
+    display: block;
+    margin: 0 auto;
+}
+.textcontent h1{
+    margin-bottom:20px;
+}
+.textcontent h5{
+    margin-bottom:10px;
+}
+.textcontent :last-child{
+    margin-bottom:20px;
+}
+
+.container_li{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* ------------------- 五星icon --------------- */
+.five_star{
+    margin: 30px -5px 30px 0px;
+}
+
+.li_feedback_content{
+    background-image: url(../sourse/01.index/feedback01.png);
+    background-repeat: no-repeat;
+    background-position: -70px center;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.li_feedback_content p{
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    text-align: start;
+}
+
+.li_feedback_content img{
+    display: block;
+    margin-right: 17px;
+    margin-bottom: 25px;
+}
+
+.li_feedback_content h5{
+    font-size: 1rem;
+    border-bottom: 1px solid #000;
+    line-height: 16px;
+}
+
+
+
+
+
+/* ==========================  buttom =============================== */
+/* ------------- item6 引導用戶線上預約 ------------- */
+/* ========================== buttom =============================== */
+
+.item6_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 150px;
+    height: 495px;
+    /* outline: 2px solid black; */
+}
+
+.item6_wrap{
+    display: block;
+    width: 60%;
+    height: 345px;
+    margin: 0 auto;
+    margin-left: 26%;
+    background-color: #FF7D00;
+    border-radius: 10px ;
+    position: relative;
+    /* outline: 2px solid black; */
+}
+.item6_content{
+    background-color: #EBEADE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 345px;
+    border-radius: 10px ;
+    box-shadow: 0 0 0 .5px #ccc;
+    position: absolute;
+    left: -10%;
+    top: 15%;
+    /* outline: 2px solid black; */
+}
+.item6_content h2{
+    padding-top: 15px;
+    /* outline: 2px solid black; */
+}
+.item6_wrapper a{
+    margin: 0 auto;
+    margin-top: 80px;
+    display: block;
+}
+.item6_wrapper a:active{
+    background-color: #11641e;
+}
+
+
+
+/* ========================================== */
+/* ------------------footer------------------ */
+/* ========================================== */
+
+
+.wrap_footer{
+    width: 100%;
+    height: 500px;
+    
+    /* outline: 2px solid black; */
+}
+
+.footer_container{
+    background-color: #EBEADE;
+    margin: 0 auto 10   0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    /* outline: 2px solid black; */
+}
+
+.footer_logo{
+    display: block;
+    width: 100px;
+    margin-right: 100px;
+}
+
+.footer_logo a{
+    text-decoration: none;
+}
+
+.footer_logo img{
+    text-decoration: none;
+    padding: 10px;
+    width: 150px;
+}
+
+.col_link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 400px;
+    /* outline:  2px solid black; */
+}
+
+.col_link h5{
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.col_link span{
+    width: 50%;
+    border-bottom: 2px solid #ccc ;
+    margin-bottom: 30px;
+}
+.col_link li{
+    margin-bottom: 50px;
+
+}
+.col_link li a{
+    text-decoration: none;
+    color: #666;
+}
+.footerMedia{
+    display: flex;
+}
+.footerMedia li{
+    padding: 20px;
+}
+
+.footerMedia li a{
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.footer_container2{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.footer_container2 h5{
+    font-size: 16px;    
+}
+

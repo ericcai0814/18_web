@@ -1,0 +1,32 @@
+@import url("reset.css");
+
+
+body{
+    background-color: #fff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    /* background-image: url(../sourse/01.index/allbg.png); */
+}
+.header_bg{
+    background-image: url("../sourse/02.about/header_bg.png");
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 33%;
+}
+
+.breadcrumbList{
+    padding-top: 66.29px;
+}
+.breadcrumb{
+    margin-bottom: 0;
+}
+
+
+
+/* ============================== */
+/* ------------- middle --------- */
+/* ============================== */
+#middle{
+    width: 100%;
+    margin: 0 auto;
+}

@@ -1,0 +1,225 @@
+@import url("reset.css");
+
+
+
+/* ================================= */
+/* ----------- navigate ------------ */
+/* ================================= */
+/* 導覽列背景色 */
+.navigate_wrap{
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: inset 0 0 0 500px rgba(255, 254, 242,.5);
+    position: fixed;
+}
+/* logo設定 */
+.logo{
+    flex-grow: 1;
+    width: 5%;
+}
+.logo img{
+    display: block;
+    width: 200px;
+    padding-top: 10px; 
+    padding-left: 30px;
+    /* vertical-align: middle; */
+} 
+.logo a{
+    display: block;
+    width: 300px;
+    margin-right: 180px;
+}
+
+
+/* 主導覽列位置及寬度 */
+.navigate{
+    max-width: 1280px;
+    display: flex;
+    margin: 0 auto;
+}
+
+/* 主導覽flex橫排 */
+.main_nav_wrap{
+    display: flex;
+    flex-grow: 1;
+}
+
+/* 導覽列子層 flex排版 */
+.main_nav{
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+    flex-grow: 1;
+    width: 100px;
+    position: relative;
+    text-align: center;
+    transition: all .4s linear;
+}
+
+.main_nav:hover {
+    background: #FFecd1;
+}
+
+.main_nav a{
+    text-decoration: none;
+    color: #78290F;
+    position: relative;
+}
+
+/* 控制登入及購物車 */
+.main_nav_item{
+    display: flex;
+    align-items: center;
+}
+
+.fa-solid{
+    margin-right: 5px;
+}
+
+
+/* 控制子選單 */
+.sub_nav{
+    display: inline-block;
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 66px;
+    background-color: #ee9d52b8;
+    border-radius: 0px 0px 10px 10px ;
+}
+.sub_nav a {
+    display: block;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+.main_nav:hover .sub_nav{
+    display: block;
+    border-radius: 0px 0px 10px 10px;
+}
+.sub_nav a:hover{
+    display: block;
+    height: 100%;
+    color: #fff;
+    transition: .5s;
+}
+
+/* ================================= */
+/* ============= 麵包屑 ============ */
+/* ================================= */
+
+.breadcrumb{
+    display: flex;
+    margin-bottom: 50px;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto 
+}
+
+.breadcrumb li {
+	padding: 20px 0px 20px 30px;
+}
+.breadcrumb li:first-child ~li:before {
+	content: "/"; 
+	color: #ccc;
+	padding-right: 20px;
+}
+
+.breadcrumb li:last-child a {
+    color: #FF7D00; 
+    font-weight: 500;
+}
+.breadcrumb li a {
+    color: #777;
+    font-weight: 100;
+    font-size: 20px;
+    text-decoration: none;
+}
+.breadcrumb li a:hover{
+    color: #ccc;
+}
+
+/* ========================================== */
+/* ------------------footer------------------ */
+/* ========================================== */
+
+
+.wrap_footer{
+    width: 100%;
+    height: 500px;
+    /* outline: 2px solid black; */
+}
+
+.footer_container{
+    background-color: #EBEADE;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    /* outline: 2px solid black; */
+}
+
+.footer_logo{
+    display: block;
+    width: 100px;
+    margin-right: 100px;
+}
+
+.footer_logo a{
+    text-decoration: none;
+}
+
+.footer_logo img{
+    text-decoration: none;
+    padding: 10px;
+    width: 150px;
+}
+
+.col_link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 400px;
+    /* outline:  2px solid black; */
+}
+
+.col_link h5{
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.col_link span{
+    width: 50%;
+    border-bottom: 2px solid #ccc ;
+    margin-bottom: 30px;
+}
+.col_link li{
+    margin-bottom: 50px;
+
+}
+.col_link li a{
+    text-decoration: none;
+    color: #666;
+}
+.footerMedia{
+    display: flex;
+}
+.footerMedia li{
+    padding: 20px;
+}
+
+.footerMedia li a{
+    text-decoration: none;
+    font-size: 50px;
+}
+
+
+.footer_container2{
+    margin-bottom: 30px;    
+}
+.footer_container2 h5{
+    font-size: 16px;    
+}

@@ -1,0 +1,235 @@
+@import url("reset.css");
+
+
+body{
+    background-color: #FFFEF2;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    /* background-image: url(../sourse/01.index/allbg.png); */
+}
+
+
+.breadcrumbList{
+    padding-top: 66.29px;
+    background:  #d2d1c2;
+}
+
+
+
+/* ============================== */
+/* ------------- middle --------- */
+/* ============================== */
+#middle{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/* contral_text_align */
+.start_way{
+    text-align: start;
+}
+.margin-left{
+    margin-left: 10px;
+}
+
+/* left */
+.wrapper{
+    max-width: 1280px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    /* outline: 2px solid black; */
+}
+
+.wrapper .left_text{
+    /* outline: 2px solid black; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+}
+.left_text_wrap{
+    width: 400px;
+    height: 300px;
+}   
+.wrapper .left_text h3{
+    margin-bottom: 20px;
+}
+
+
+#e_mail{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#code{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.remember_account .checkbox{
+    margin-bottom: 10px;
+}
+.bnt1{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background:#15C030;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40px;
+    width: 310px;
+    height: 40px;
+
+    margin-bottom: 10px;
+}
+.forgot_code{
+    text-decoration: none;
+    width: 300px;
+}
+
+
+
+/* right */
+
+.right_text{
+    /* outline: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    padding: 20px 30px;
+    border-left: 1px solid #ccc;
+}
+.right_text h3{
+    margin-bottom: 10px;
+}
+
+.right_text p{
+    margin-bottom: 10px;
+}
+
+.right_text ul{
+    margin-bottom: 10px;
+}
+.right_text ul li h5{
+    font-weight: 600;
+}
+.bnt2{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background:#15C030;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40px;
+    width: 310px;
+    height: 40px;
+
+    margin-bottom: 10px;
+}
+.two_step{
+    padding-top: 10px;
+}
+
+
+
+.input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+.ic1 {
+    margin-top: 40px;
+}
+
+.ic2 {
+    margin-top: 30px;
+}
+
+.input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+.cut {
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+}
+
+.cut-short {
+    width: 50px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+}
+
+.placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+}
+
+.input:focus ~ .placeholder {
+    color: #dc2f55;
+}
+
+.submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.submit:active {
+    background-color: #06b;
+}
