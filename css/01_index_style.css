@@ -192,6 +192,11 @@ body{
     left: 15px;
     top: 50px;
 }
+.top_banner_wrap a:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 2px 2px  2px rgb(61, 105, 70);
+}
 
 
 
@@ -263,7 +268,7 @@ body{
 
 .first_service_text_group h1{
     text-align: center;
-    margin-top: 150px;
+    margin-top: 110px;
     font-size: 58px;
     margin-bottom: 50px;
     font-weight: 700;
@@ -394,6 +399,12 @@ body{
     background-color: #11641e;
 }
 
+.second_service_item a:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 2px 2px  2px rgb(61, 105, 70);
+}
+
 /* ------ second_sercice_item end ------ */
 
 /* ===================================== */
@@ -432,6 +443,12 @@ body{
 }
 .third_service_item_wrap a:active {
     background-color: #11641e;
+}
+
+.third_service_item_wrap a:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 2px 2px  2px rgb(61, 105, 70);
 }
 
 .third_service_item img{
@@ -496,6 +513,13 @@ body{
 .four_service_item_wrap a:active{
     background-color:#11641e;
 }
+
+.four_service_item_wrap a:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 2px 2px  2px rgb(61, 105, 70);
+}
+
 .four_service_item img{
     box-shadow: #ccc 0px 0px 10px;
     display: block;
@@ -677,6 +701,11 @@ body{
 }
 
 
+.item6_wrapper a:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 2px 2px  2px rgb(61, 105, 70);
+}
 
 /* ========================================== */
 /* ------------------footer------------------ */

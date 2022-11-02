@@ -220,3 +220,9 @@ body{
 .Content_text a:active {
     background-color: #11641e;
 }
+
+.Content_text a:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 2px 2px  2px rgb(61, 105, 70);
+}

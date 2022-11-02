@@ -167,7 +167,7 @@ body{
     top: 45%;
     right: 0%;
 }
-.product_container2::before{
+.product_container_bg > .product_container2::before{
     content: "";
     border-color: transparent #FFAA00 transparent transparent;
     border-style: solid solid solid solid;
@@ -288,4 +288,15 @@ body{
 }
 .btn_group .btn2:active {
     background-color: #11641e;
+}
+
+.btn_group .btn2:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px  2px rgb(61, 105, 70);
+}
+
+.btn_group .btn1:hover{
+    cursor: pointer;
+    
+    box-shadow: 2px 2px  2px rgb(61, 105, 70);
 }
