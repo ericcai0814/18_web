@@ -2,7 +2,7 @@
 
 body{
     background-color: #FFFEF2;
-    font-family: Didot, serif;
+    font-family: Didot, serif,sans-serif,;
 }
 /* background-color: #EBEADE; */
 
@@ -174,31 +174,14 @@ body{
 }
 
 .top_banner_wrap a{
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    background:#15C030;
-    color: #fff;
-    border-radius: 20px;
     margin-left: 20px;
-    font-size: 25px;
-    line-height: 50px;
-    width: 150px;
-    height: 50px;
 }
-.top_banner_wrap a:active {
-    background-color: #11641e;
-}
+
 .top_banner_wrap_text{
     position: absolute;
 
     left: 15px;
     top: 50px;
-}
-.top_banner_wrap a:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-    box-shadow: 2px 2px  2px rgb(61, 105, 70);
 }
 
 
@@ -258,7 +241,7 @@ body{
 
 .first_service_item{
     max-width: 1280px;
-    margin: 0 auto 150px;
+    margin: 0 auto 50px;
 
     position: relative;
 }
@@ -343,7 +326,7 @@ body{
 /* ------ H1  ------ */
 .second_service_text_group h1{
     font-weight: 700;
-    padding-top: 10px;
+    padding-top: 50px;
     margin-bottom: 10px;
 }
 .second_service_text_group h2{
@@ -397,16 +380,10 @@ body{
 .second_service_item a{
     display: block;
     margin: 0px auto ;
-}
-.second_service_item a:active{
-    background-color: #11641e;
+    width: 300px;
 }
 
-.second_service_item a:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-    box-shadow: 2px 2px  2px rgb(61, 105, 70);
-}
+
 
 /* ------ second_sercice_item end ------ */
 
@@ -444,15 +421,9 @@ body{
 .third_service_item_wrap a{
     margin-top: 50px;
 }
-.third_service_item_wrap a:active {
-    background-color: #11641e;
-}
 
-.third_service_item_wrap a:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-    box-shadow: 2px 2px  2px rgb(61, 105, 70);
-}
+
+
 
 .third_service_item img{
     box-shadow: #ccc 0px 0px 10px;
@@ -515,15 +486,8 @@ body{
     margin-left: 30px;
     margin-bottom: 50px;
 }
-.four_service_item_wrap a:active{
-    background-color:#11641e;
-}
 
-.four_service_item_wrap a:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-    box-shadow: 2px 2px  2px rgb(61, 105, 70);
-}
+
 
 .four_service_item img{
     box-shadow: #ccc 0px 0px 10px;
@@ -698,19 +662,12 @@ body{
 }
 .item6_wrapper a{
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 200px;
     display: block;
-}
-.item6_wrapper a:active{
-    background-color: #11641e;
+    width: 300px;
+    font-size: 20px;
 }
 
-
-.item6_wrapper a:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-    box-shadow: 2px 2px  2px rgb(61, 105, 70);
-}
 
 /* ========================================== */
 /* ------------------footer------------------ */

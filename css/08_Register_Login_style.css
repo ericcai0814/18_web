@@ -137,28 +137,12 @@ body{
 }
 
 .submit {
-    background-color: #15C030;
     border-radius: 12px;
-    border: 0;
     box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    font-size: 18px;
-    height: 50px;
     margin-top: 15px;
     margin-bottom: 10px;
-    outline: 0;
-    text-align: center;
     width: 100%;
 }
-.submit:active {
-    background-color: #11641e;
-}
-.submit:hover{
-    cursor: pointer;
-    box-shadow: 2px 2px  2px rgb(61, 105, 70);
-}
-
 
 
 /*  */
@@ -199,32 +183,11 @@ body{
 .right_text ul li h5{
     font-weight: 600;
 }
-.bnt2{
-    text-decoration: none;
-    box-sizing: border-box;
-    display: block;
-    text-align: center;
-    background:#15C030;
-    color: #fff;
-    cursor: pointer;
+.right_text a{
+    margin-top: 10px;
     border-radius: 12px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 50px;
-    width: 100%;
-    height: 50px;
-    margin-top: 15px;
+    width: 400px;
 }
-.bnt2:active{
-    background:#11641e;
-}
-
 .two_step{
     padding-top: 10px;
 }
-
-.bnt2:hover{
-    cursor: pointer;
-    box-shadow: 2px 2px  2px rgb(61, 105, 70);
-}
-

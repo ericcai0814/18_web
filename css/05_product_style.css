@@ -42,7 +42,6 @@ body{
 #middle{
     width: 100%;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 /* ------ 選擇療程服務 title ----- */
@@ -82,124 +81,29 @@ body{
     /* outline: 1px solid black; */
     display: flex;
     justify-content: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-}
-.firstContainer_wrapper_wrap_click{
-    text-decoration: none;
-
-    position: relative;
+    gap: 50px;
 }
 
 
-.wrap .uunderline::before{
-    content: "";
-    display: block;
-    width: 0px;
-    height: 2px;
-    background: #fa0;
-
-    position: absolute;
-    top: 25px;
-    left: 0;
-    transition: .5s;
-}
-.firstContainer_wrapper_wrap_click:hover .underline::before{
-    content: "";
-    display: block;
-    width: 145px;
-    height: 2px;
-    background: #fa0;
-
-    position: absolute;
-    top: 25px;
-    left: 0;
-}
 
 /* ------------ 商品列表 ------------ */
-.product_container1{
+.product_container{
     max-width: 1280px;
     height: 500px;
-    margin: 0 auto 0px;
+    margin: 0 auto 50px;
     display: flex;
-    overflow: hidden;
-    position: relative;
-}
-
-.product_container1 ::after{
-    content: "";
-    border-color: transparent transparent transparent #FFAA00;
-    border-style: solid solid solid solid;
-    border-width: 15px;
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    top: 45%;
-    right: 0%;
-}
-.product_container1::before{
-    content: "";
-    border-color: transparent #FFAA00 transparent transparent;
-    border-style: solid solid solid solid;
-    border-width: 15px;
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    top: 45%;
-    left: 0%;
-}
-.product_container2{
-    max-width: 1280px;
-    height: 500px;
-    margin: 0 auto 0px;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-}
-.product_container2 ::after{
-    content: "";
-    border-color: transparent transparent transparent #FFAA00;
-    border-style: solid solid solid solid;
-    border-width: 15px;
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    top: 45%;
-    right: 0%;
-}
-.product_container_bg > .product_container2::before{
-    content: "";
-    border-color: transparent #FFAA00 transparent transparent;
-    border-style: solid solid solid solid;
-    border-width: 15px;
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    top: 45%;
-    left: 0%;
-}
-.product_container2{
-    width: 100%;
-    
-    position: relative;
+    align-items: center;
+    /* overflow: hidden; */
 }
 
 
-
-
-.product_container2_wrap{
-    max-width: 1280px;
-    height: 500px;
-    margin: 0 auto 0px;
-    display: flex;
-}
 
 .text_content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    margin-left: 100px;
+    margin-left: 50px;
     height: 350px;
 
     /* outline: 1px solid black; */
@@ -212,29 +116,23 @@ body{
 
 .text_content p{
     line-height: 1.6;
+    width: 400px;
 }
 
-
-
-/* 商品清單 */
+/* 第二排商品列背景色 */
 .product_container_bg{
     background-color: #EBEADE;
     margin: 0 auto;
 }
-.product_container{
-    display: flex;
-    align-items: center;
-    width: 1280px;
-}
+
 .product_container .item{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
     height: 350px;
-    /* outline: 2px solid black; */
-    
+    /* overflow: hidden; */
 }
 .product_container .item img{
     display: block;
@@ -242,7 +140,7 @@ body{
 }
 
 .product_container .item h5{
-    margin-bottom: 15px;
+    margin-top: 10px
 }
 .product_price{
     padding: 10px;
@@ -257,46 +155,12 @@ body{
     gap: 10px;
     margin-top: 10px;  
 }
-.btn_group .btn1{
+.btn_group .btn_shoppingCar{
     text-decoration: none;
-    display: block;
-    width: 110px;
-    height: 40px;
-    line-height: 40px;
-    border: 1px solid #15C030;
-    background-color: #fff;
-    color: #15C030;
-    border-radius: 20px;
-    font-size: 16px
+
+}
+.btn_group .btn2_payCash{
+    text-decoration: none; 
+    background-color: #FFECD1;
 }
 
-.btn_group .btn2{
-    text-decoration: none;
-    text-decoration: none;
-    display: block;
-    width: 110px;
-    height: 40px;
-    line-height: 40px;
-    background-color: #15C030;
-    color: #FFF;
-    border-radius: 20px;
-    font-size: 16px
-}
-
-.btn_group .btn1:active {
-    background-color: #11641e;
-}
-.btn_group .btn2:active {
-    background-color: #11641e;
-}
-
-.btn_group .btn2:hover{
-    cursor: pointer;
-    box-shadow: 2px 2px  2px rgb(61, 105, 70);
-}
-
-.btn_group .btn1:hover{
-    cursor: pointer;
-    
-    box-shadow: 2px 2px  2px rgb(61, 105, 70);
-}
