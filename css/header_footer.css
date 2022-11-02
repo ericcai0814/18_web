@@ -11,6 +11,8 @@
     margin: 0 auto;
     box-shadow: inset 0 0 0 500px rgba(255, 254, 242,.5);
     position: fixed;
+
+    z-index: 10;
 }
 /* logo設定 */
 .logo{
