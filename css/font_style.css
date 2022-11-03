@@ -35,7 +35,7 @@
     display: inline-block;
     font-family: Clarkson,Helvetica,sans-serif;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0;
     line-height: 1em;
     margin: 0;
@@ -53,7 +53,7 @@
     touch-action: manipulation;
     vertical-align: baseline;
     white-space: nowrap;
-    box-shadow: rgb(111, 116, 95) 0px 0px 3px;;
+    box-shadow: rgb(50, 51, 43) 0px 0px 4px;;
 }
 
 .button-48:before {
@@ -69,6 +69,10 @@
     transform: translateZ(0);
     transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
     width: 100%;
+}
+.button-48:hover{
+    color: #000;
+    font-weight: 900;
 }
 
 .button-48:hover:before {
