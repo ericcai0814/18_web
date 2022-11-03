@@ -4,8 +4,10 @@ body{
     background-color: #FFFEF2;
     line-height: 1.5;
 }
-/* background-color: #EBEADE; */
-
+/* scrollDownChangeColor */
+.scrolled{
+    background-color: #f0ead2;
+}
 
 .header_bg{
     background-image: url("../sourse/01.index/banner1.png");
@@ -394,7 +396,7 @@ body{
     display: block;
     
     width: 320px;
-    text-align: start;
+    text-align: justify;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -404,9 +406,6 @@ body{
     width: 300px;
 }
 
-
-
-/* ------ second_sercice_item end ------ */
 
 /* ===================================== */
 /* -------------- third item ----------- */
@@ -428,15 +427,15 @@ body{
     width: 50%;
     flex-grow: 1;
 }
-.third_service_item_wrap h2{
+.third_service_item_wrap h3{
     width: 550px;
     box-sizing: border-box;
-    padding: 120px 0px 30px;
+    padding: 120px 0px 50px;
 }
 .third_service_item_wrap p{
     display: block;
     width: 50%;
-    text-align: start;
+    text-align: justify;
     padding: 10px;
 }
 .third_service_item_wrap a{
@@ -486,7 +485,7 @@ body{
     align-items: center;
     width: 50%;
 }
-.four_service_item_wrap h2{
+.four_service_item_wrap h3{
     width: 550px;
     box-sizing: border-box;
     padding: 120px 0px 30px;
@@ -494,7 +493,7 @@ body{
 .four_service_item_wrap p{
     display: block;
     width: 50%;
-    text-align: start;
+    text-align: justify;
     margin-left: 30px;
     margin-bottom: 50px;
 }
@@ -668,7 +667,7 @@ body{
     top: 15%;
     /* outline: 2px solid black; */
 }
-.item6_content h2{
+.item6_content h3{
     padding-top: 15px;
     /* outline: 2px solid black; */
 }

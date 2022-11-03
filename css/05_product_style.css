@@ -29,7 +29,7 @@ body{
 
     position: absolute;
     top: 50%;
-    left: 36%;
+    left: 38%;
 }
 
 
@@ -54,7 +54,7 @@ body{
 }
 .wrapper{
     /* outline: 1px solid black; */
-    width: 50%;
+    width: 60%;
     margin: 0 auto 100px;
 }
 .wrapper h1{
@@ -74,15 +74,18 @@ body{
 
     position: absolute;
     bottom: -5px;
-    left: 46%;
+    left: 48%;
 }
 .wrapper .wrap{
     /* outline: 1px solid black; */
     display: flex;
     justify-content: center;
     gap: 50px;
+    width: 100%; 
 }
-
+.firstContainer_wrapper_wrap_click{
+    width: 100%;
+}
 
 
 /* ------------ 商品列表 ------------ */

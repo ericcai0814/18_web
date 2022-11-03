@@ -60,7 +60,7 @@ body{
 
 .first_container h1{
     text-align: start;
-    margin-bottom: 30px;
+    padding: 10px;
 }
 
 .first_container p{
@@ -69,10 +69,11 @@ body{
 
 .first_container_item{
     display: block;
+    box-sizing: border-box;
     margin: 0 auto;
     padding: 20px;
     width: 80%;
-    height: 300px;
+    height: 290px;
     box-sizing: border-box;
     margin-bottom: 100px;
     background-color: #EBEADE;
@@ -102,6 +103,9 @@ body{
     position: absolute;
     right: 0;
     bottom: 0;
+}
+.first_container_item p{
+    padding: 10px;
 }
 
 
@@ -168,7 +172,7 @@ body{
 .second_container li p{
     display: block;
     margin: 0 auto 20px;
-    text-align: start;
+    text-align: justify;
     width: 80%;
     padding: 10px;
 }

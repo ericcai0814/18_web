@@ -19,7 +19,7 @@
 
     <header id="top" class="header_bg">
 <!-- ------------------- navigate ------------------- -->
-        <div class="navigate_wrap">
+        <div class="navigate_wrap" id="nav">
             <div class="navigate">
                 <div class="logo">
                     <a href="./index.html">
@@ -82,7 +82,7 @@
             </div><!-- navigate_end -->
         </div> <!-- navigate_wrap_end -->
         
-        <div class="top_banner_wrap">
+        <div class="top_banner_wrap section1">
             <div class="top_banner_wrap_text">
                 <h1>In <span>Home</span> Massage</h1>
                 <h2>屬於你的健康與美麗</h2>  
@@ -171,7 +171,7 @@
             <div class="third_service_item">
 
                 <div class="third_service_item_wrap">
-                    <h2 class="h2_style">SPA中心專屬尊寵呵護</h2>
+                    <h3 class="h3_style">SPA中心專屬尊寵呵護</h3>
                     <p class="p1_style">AG提供多種護理療程，讓身心靈得以放鬆
                         妳可以按照自己的時間安排護理療程，更可以在台北，台中及台南找到我們的SPA中心。</p>
                     <a href="./store.html" class="button-48">查看更多</a>
@@ -187,7 +187,7 @@
 
 
                 <div class="four_service_item_wrap">
-                    <h2 class="h2_style"><span class=""></span>你可以選擇專屬的美療師<span class=""></span></h2>
+                    <h3 class="h3_style"><span class=""></span>你可以選擇專屬的美療師<span class=""></span></h3>
                     <p class="p1_style">所有美療師都經過專業的培訓及嚴格的考核
                         每一位老師都有五年以上的美療師服務經驗
                         我們是你最好的選擇。</p>
@@ -244,8 +244,8 @@
                 <div class="item6_wrap">
 
                     <div class="item6_content">
-                        <h2 class="h2_style">迎接你專屬的life&ensp;style</h2>
-                        <h2 class="h2_style">You&ensp;deserve&ensp;a&ensp;better&ensp;lifestyle</h2>
+                        <h3 class="h3_style">迎接你專屬的life&ensp;style</h3>
+                        <h3 class="h3_style">You&ensp;deserve&ensp;a&ensp;better&ensp;lifestyle</h3>
                     </div>
                     
                 </div>
@@ -309,9 +309,25 @@
             </div>
         </footer>
 
-        
+        <script>
+            let lastPos = 0
+const nav = document.querySelector('#nav');
+const section1 = document.querySelector('.section1');
 
-    </div>
+// 1. 消失
+document.addEventListener('scroll',function(){
+    let currentPos =  window.scrollY;
+  //   往下滑
+    if(currentPos > lastPos){
+        nav.style.top = "-80px";
+    }else{
+    nav.style.top = "0px";
+    }
+    lastPos = currentPos;
+});
+
+</script>
+
     
 </body>
 </html>

@@ -7,6 +7,12 @@ body{
 /* ================================= */
 /* ----------- navigate ------------ */
 /* ================================= */
+/* js導覽列換色 */
+.scrolled{
+    background-color: #f0ead2;
+}
+
+
 /* 導覽列背景色 */
 .navigate_wrap{
     width: 100%;
@@ -15,6 +21,7 @@ body{
     position: fixed;
 
     z-index: 10;
+    transition: 1s ;
 }
 /* logo設定 */
 .logo{
