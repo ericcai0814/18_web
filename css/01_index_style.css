@@ -2,7 +2,7 @@
 
 body{
     background-color: #FFFEF2;
-    font-family: Didot, serif,sans-serif,;
+    line-height: 1.5;
 }
 /* background-color: #EBEADE; */
 
@@ -165,7 +165,7 @@ body{
 .top_banner_wrap h2{
     font-weight: 600;
     width: 600px;
-    margin: 20px 0 50px;
+    margin: 20px 0 30px;
     padding-left: 20px;
     font-size: 30px;
     letter-spacing: 6px;
@@ -238,7 +238,7 @@ body{
 }
 
 
-
+/* 服務項目 */
 .first_service_item{
     max-width: 1280px;
     margin: 0 auto 50px;
@@ -251,30 +251,51 @@ body{
     /* outline: 2px solid black; */
     
 }
-
-.first_service_text_group h1{
-    text-align: center;
+.first_service_text_group h3{
     margin-top: 110px;
-    font-size: 58px;
     margin-bottom: 50px;
-    font-weight: 700;
 
     position: relative;
 }
+/* 裝飾線 */
+.first_service_text_group .text_left_line{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background-color: #FF7D00;
+
+    position: absolute;
+    top: 50%;
+    left: 12.5%;
+}
+
+.first_service_text_group .text_right_line{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background-color: #FF7D00;
+
+    position: absolute;
+    top: 50%;
+    right: 12.5%;
+}
 
 
-
+/* 圖文說明 */
 .first_service_item_group{
     max-width: 1280px;
     margin: 0 auto;
     /* outline: 2px solid black; */
     display: flex;
     justify-content: center;
+    gap: 30px;
 }
+
 
 .first_service_item_group .item{
     width: 17%;
-    margin-right: 30px;
 }
 
 .first_service_item_group img{
@@ -410,7 +431,7 @@ body{
 .third_service_item_wrap h2{
     width: 550px;
     box-sizing: border-box;
-    padding: 120px 0px 100px;
+    padding: 120px 0px 30px;
 }
 .third_service_item_wrap p{
     display: block;
@@ -446,15 +467,6 @@ body{
     z-index: -1;
 }
 
-/* .spaCenter_pic{
-    background-color: #FF7D00;
-    width: 800px;
-    flex-grow: 1;
-    outline: 2px solid black;     
-    position: relative;
-} 
-*/
-
 
 
 /* -------------------------- four_service_item ------------------------------ */
@@ -477,7 +489,7 @@ body{
 .four_service_item_wrap h2{
     width: 550px;
     box-sizing: border-box;
-    padding: 120px 0px 100px;
+    padding: 120px 0px 30px;
 }
 .four_service_item_wrap p{
     display: block;
@@ -559,10 +571,10 @@ body{
     display: block;
     margin: 0 auto;
 }
-.textcontent h1{
+.textcontent h3{
     margin-bottom:20px;
 }
-.textcontent h5{
+.textcontent h6{
     margin-bottom:10px;
 }
 .textcontent :last-child{
@@ -577,7 +589,7 @@ body{
 }
 /* ------------------- 五星icon --------------- */
 .five_star{
-    margin: 30px -5px 30px 0px;
+    margin: 30px 0px 10px;
 }
 
 .li_feedback_content{
@@ -602,7 +614,7 @@ body{
 .li_feedback_content img{
     display: block;
     margin-right: 17px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .li_feedback_content h5{
@@ -647,9 +659,10 @@ body{
     justify-content: center;
     margin: 0 auto;
     width: 100%;
-    height: 345px;
+    height: 320px;
     border-radius: 10px ;
-    box-shadow: 0 0 0 .5px #ccc;
+    box-shadow: 0 0 0 1px #ccc;
+
     position: absolute;
     left: -10%;
     top: 15%;
@@ -661,7 +674,7 @@ body{
 }
 .item6_wrapper a{
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 80px;
     display: block;
     width: 300px;
     font-size: 20px;

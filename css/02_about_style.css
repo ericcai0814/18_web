@@ -2,9 +2,7 @@
 
 body{
     background-color: #FFFEF2;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    /* background-image: url(../sourse/01.index/bg.png); */
-    
+    line-height: 1.5;
 }
 /* background-color: #EBEADE; */
 .header_bg{

@@ -3,11 +3,10 @@
 
 body{
     background-color: #FFFEF2;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    /* background-image: url(../sourse/01.index/allbg.png); */
+    line-height: 1.5;
 }
 .header_bg{
-    background-image: url("../sourse/05.product/shutterstock_189908477.png");
+    background-image: url("../sourse/05.product/banner.png");
     background-position: center bottom;
     background-size: cover;
     width: 100%;

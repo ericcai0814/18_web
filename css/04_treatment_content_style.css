@@ -3,8 +3,7 @@
 
 body{
     background-color: #FFFEF2;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    /* background-image: url(../sourse/01.index/allbg.png); */
+    line-height: 1.5;
 }
 .header_bg{
     background-image: url("../sourse/04.treatment_content/banner1.png");
