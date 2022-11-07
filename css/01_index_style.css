@@ -325,7 +325,8 @@ body{
 /* ------ 置中 ------ */
 .second_service_item{
     display: block;
-    background-color: #EBEADE;
+    background-color: #F6F5E8;
+    width: 100%;
     margin: 0 auto 220px;
     padding-bottom: 30px;
     display: flex;
@@ -336,8 +337,9 @@ body{
 
 .second_service_item_group{
     display: flex;
+    justify-content: center;
     max-width: 1280px;
-    height: 447.08px;
+    height: 390px;
     gap: 20px;
     /* outline: 2px solid black; */
 
@@ -347,46 +349,52 @@ body{
 }
 
 /* ------ H1  ------ */
-.second_service_text_group h1{
-    font-weight: 700;
-    padding-top: 50px;
-    margin-bottom: 10px;
-}
 .second_service_text_group h2{
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.second_service_text_group h4{
     margin-bottom: 20px;
     color: #333333;
 }
 
-/* ------ 圖片  ------ */
+
+/* ------ how it works  ------ */
+
+.second_service_item_wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    border-radius: 12px;
+    width: 25%;
+    height: 345px;
+
+    border: 1px solid #ccc;
+}
 .second_service_item_group img{
     display: block;
-    border-radius: 10px 10px 0px 0px ;
+    /* border-radius: 10px 10px 0px 0px ; */
     width: 100%;
+    border-radius: 12px 12px 0 0;
 }
 
-/* ------ 文字  ------ */
 .text{
     background-color: #fff;
     border-radius: 0px 0px 10px 10px;
     height: 159px;
     width: 100%;
-}
-.second_service_item_wrap{
-    display: block;
-    letter-spacing: 1px;
-    border-radius: 10px;
-    
-    width: 400px;
-    height: 406px;
-    align-items:center;
 
-    border: 1px solid #ccc;
+    flex-grow: 1;
 }
+
 .second_service_item_wrap h2{
     padding-top: 20px;
     box-sizing: border-box;
     color: #333333;
-    font-size: 32px;
+    font-size: 25px;
     line-height: 25.2px;
     letter-spacing: 1px;
     text-align: center;
@@ -394,11 +402,12 @@ body{
 }
 .second_service_item_wrap p{
     display: block;
-    
-    width: 320px;
+    width: 100%;
+    padding: 10px;
     text-align: justify;
     margin: 0 auto;
     box-sizing: border-box;
+    font-size: 20px;
 }
 .second_service_item a{
     display: block;
@@ -652,7 +661,7 @@ body{
     /* outline: 2px solid black; */
 }
 .item6_content{
-    background-color: #EBEADE;
+    background-color: #F6F5E8;
     display: flex;
     flex-direction: column;
     justify-content: center;
