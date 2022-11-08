@@ -376,7 +376,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
 
 }
@@ -387,25 +387,57 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 200px
+    max-width: 225px
 }
 
 .first_service_item_group img{
     min-width: 200px;
-    width: 80%;
+    width: 100%;
     box-shadow: #ccc 0px 0px 10px ;
     border-radius: 5px;
     margin-bottom: 10px;    
-    gap: 10px;
     
 }
 
-.first_service_item_group h3{
+.first_service_item_group h5{
     text-align: center;
     text-align: center;
     font-size: 38px;
     letter-spacing: 5px;
     /* outline: 2px solid black; */
+}
+
+/* 手機版414px開啟 */
+.open_moible1{
+    display: none;  
+    
+}
+.open_moible1_itemBg1{
+background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sourse/01.index/mobile/mobile_service01.png);
+}
+.open_moible1_itemBg2{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sourse/01.index/mobile/mobile_service02.png);
+    }
+.open_moible1_itemBg3{
+background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sourse/01.index/mobile/mobile_service03.png);
+}
+.open_moible1_itemBg4{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sourse/01.index/mobile/mobile_service04.png);
+    }
+.open_moible1_itemBg1, .open_moible1_itemBg2, .open_moible1_itemBg3, .open_moible1_itemBg4{
+    background-position: center center;
+    background-size: cover;
+    min-width: 200px;
+    width: 300px;
+    height: 190px;
+    box-shadow: #ccc 0px 0px 10px ;
+    border-radius: 5px;
+    margin-bottom: 10px;    
+    text-decoration: none;
+}
+.open_moible1_itemBg1 h5, .open_moible1_itemBg2 h5, .open_moible1_itemBg3 h5, .open_moible1_itemBg4 h5{
+    margin-top: 130px;
+    color: #FFFEF2;
 }
 
 /* ================================== */

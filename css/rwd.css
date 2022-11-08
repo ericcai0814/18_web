@@ -81,7 +81,10 @@
         padding: 0;
         font-size: 10px;
     }
-    
+    .first_service_text_group h3{
+        font-size: 35px;
+        
+    }
     
 }
 
@@ -135,13 +138,15 @@
     /* firstsection_服務項目*/
     .first_service_item{
         max-width: 414px;
+
+        position: relative;/* 給標題定位 */
     }
     .first_service_text_group h3{
         font-size: 20px;
-        margin-top: 32px;
+        margin: 20px 0 20px;
         text-align: center;
     }
-    /* 裝飾線 */
+    /* 裝飾線消失 */
     .first_service_text_group .text_left_line{
         display: none;
     }
@@ -149,7 +154,34 @@
         display: none;
     }
 
-    .first_service_item_group{
-        max-width: 414px;
+/* 控制第一個服務項目更換樣式 */
+    .desk_close1{
+        display: none;
     }
+    .open_moible1{
+        display: block;
+    }
+
+/* 第一個服務項目樣式設定 */
+    .open_moible1{
+        max-width: 414px;
+        display: flex;
+        
+    }
+    .open_moible1 .item{
+        gap: 10px;
+        
+    }
+    .open_moible1 img{
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
+    }
+/* 文字移到圖片上，同時加遮色片 */
+    .open_moible1 .item{
+        position: relative;
+    }
+    .open_moible1 h5{
+        
+    }
+
 }
