@@ -3,6 +3,7 @@
 body{
     background-color: #FFFEF2;
     line-height: 1.5;
+    color: #333333;
 }
 /* scrollDownChangeColor */
 .scrolled{
@@ -15,6 +16,8 @@ body{
     background-size: cover;
     width: 100%;
     padding-bottom: 12%;
+
+    position: relative;
 }
 
 
@@ -61,7 +64,7 @@ body{
 }
 
 /* 主導覽flex橫排 */
-.main_nav_wrap{
+.main_nav_wrap1{
     display: flex;
     flex-grow: 1;
 }
@@ -132,6 +135,87 @@ body{
     transition: .5s;
 }
 
+/* 購物車及會員登入 */
+.main_nav_wrap2{
+    display: flex;
+    width: 20%;
+}
+
+/* 漢堡線 */
+.menu-icon{
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: auto;
+
+    display: none;
+}
+.menu-icon i{
+    font-size: 20px;
+}
+
+/*--------------- 手機版選單 ----------------*/
+#mobile_mainNav{
+    display: none;
+}
+.mobile_wrap{
+    
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #FFFEF2;
+
+    position: absolute;
+    left: 0px;
+    top: 50px;
+
+    z-index: 10;
+}
+.mobile_wrap_main_nav{
+    border: 1px solid #ccc;
+}
+.mobile_wrap_main_nav_item{
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    color: #333333;
+    
+}
+
+.item_text{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    padding: 10px;
+    height: 40px;
+}
+.item_text i{
+    margin-left: auto;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+/* 手機版子選單 */
+#mobile_subNav{
+    display: none;
+}
+.mobile_wrap_main_nav_item_subNav{
+    width: 100%;
+    height: 100vh;
+
+    position: absolute;
+}
+
+.mobile_wrap_sub_nav_item{
+    text-decoration: none;
+    color: #333333;
+}
+.sub_text{
+    align-items: center;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    height: 40px;
+}
 
 /* ================================= */
 /* ---------- top_banner_text ------ */
@@ -285,31 +369,39 @@ body{
 }
 
 
-/* 圖文說明 */
 .first_service_item_group{
     max-width: 1280px;
     margin: 0 auto;
     /* outline: 2px solid black; */
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
+
 }
 
 
 .first_service_item_group .item{
-    width: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px
 }
 
 .first_service_item_group img{
-    display: block;
+    min-width: 200px;
+    width: 80%;
     box-shadow: #ccc 0px 0px 10px ;
     border-radius: 5px;
     margin-bottom: 10px;    
-    width: 100%;
+    gap: 10px;
+    
 }
 
 .first_service_item_group h3{
-
+    text-align: center;
     text-align: center;
     font-size: 38px;
     letter-spacing: 5px;
@@ -773,4 +865,21 @@ body{
 .footer_container2 h5{
     font-size: 16px;    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

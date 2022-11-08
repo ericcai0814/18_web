@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/01_index_style.css">
     <link rel="stylesheet" href="./css/font_style.css">
+    <link rel="stylesheet" href="./css/rwd.css">
     <title>AGENS SPA</title>
 </head>
 
@@ -24,10 +26,10 @@
                 <div class="logo">
                     <a href="./index.html">
                         <img src="./sourse/01.index/logo_01.png" alt="AG_logo" >
-                </a>
+                    </a>
                 </div>
 
-                <div class="main_nav_wrap">
+                <div class="main_nav_wrap1">
                     <div class="main_nav" >
 
                         <a href="./about.html" class="main_nav_item">
@@ -64,34 +66,114 @@
                             <p class="p2_style">線上預約</p>
                         </a>
                     </div>
-
+                </div> <!-- main_nav_wrap -->
+                
+                <div class="main_nav_wrap2">
                     <div class="main_nav">
                         <a href="./Register_Login.html" class="main_nav_item_a">
-                            <i class="fa-solid fa-user"></i>
-                                <p class="p2_style">登入/註冊</p>
+                            <i class="fa-solid fa-user" title="登入/註冊"></i>
+                            <p class="p2_style">登入/註冊</p>
                         </a>
                     </div>
-                
                     <div class="main_nav">
                         <a href="#" class="main_nav_item_a">
-                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-solid fa-cart-shopping" title="購物車"></i>
                             <p class="p2_style">購物車</p>
                         </a>
                     </div>
-                </div> <!-- main_nav_wrap -->
+                    <div class="menu-icon" id="icon1"><!-- 手機版漢堡線 -->
+                        <i class="bi bi-list"></i>
+                    </div>
+                </div>
             </div><!-- navigate_end -->
-        </div> <!-- navigate_wrap_end -->
-        
+        </div> <!--navigate_wrap_end-->
+
+
+<!--------------------------------- 手機選單 ------------------------------------------>
+        <div class="mobile_wrap" id="mobile_mainNav">
+
+            <div class="mobile_wrap_main_nav" >
+                <a href="./about.html" class="mobile_wrap_main_nav_item">
+                    <div class="item_text">
+                        <p class="p3_style">關於AG</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="mobile_wrap_main_nav">
+                <a href="./treatment_class.html" class="mobile_wrap_main_nav_item">
+                    <div class="item_text">
+                        <p class="p3_style">嚴選療程</p>
+                        <i class="bi bi-chevron-right"></i>
+                    </div>
+                </a>
+            </div>
+
+            <div class="mobile_wrap_main_nav">
+                <a href="./product.html" class="mobile_wrap_main_nav_item">
+                    <div class="item_text">
+                        <p class="p3_style">周邊產品</p>
+                    </div>
+            </div>
+
+            <div class="mobile_wrap_main_nav">
+                <a href="./store.html" class="mobile_wrap_main_nav_item">
+                    <div class="item_text">
+                        <p class="p3_style">服務據點</p>
+                    </div>
+            </div>
+
+            <div class="mobile_wrap_main_nav">
+                <a href="./online_reservation.html" class="mobile_wrap_main_nav_item">
+                    <div class="item_text">
+                        <p class="p3_style">線上預約</p>
+                    </div>
+            </div>
+            <!--------------------------- 子選單 ---------------------------->
+            <div class="mobile_wrap_main_nav_item_subNav" id="mobile_subNav">
+                <a href="./04_treatment_content.html" class="mobile_wrap_sub_nav_item">
+                    <div class="item_text sub_text">
+                        <p class="p3_style">嚴選療程</p>
+                        <i class="bi bi-chevron-left"></i>
+                    </div>
+                </a>
+                <a href="./04_treatment_content.html" class="mobile_wrap_sub_nav_item">
+                    <div class="item_text sub_text">
+                        <p class="p3_style">經典SPA</p>
+                    </div>
+                </a>
+                <a href="./04_treatment_content.html" class="mobile_wrap_sub_nav_item">
+                    <div class="item_text sub_text" >
+                        <p class="p3_style">美體塑身</p>
+                    </div>
+                </a>
+                <a href="./04_treatment_content.html" class="mobile_wrap_sub_nav_item">
+                    <div class="item_text sub_text">
+                        <p class="p3_style">護膚療程</p>
+                    </div>
+                </a>
+                <a href="./04_treatment_content.html" class="mobile_wrap_sub_nav_item">
+                    <div class="item_text sub_text">
+                        <p class="p3_style">男士療程</p>
+                    </div>
+                </a>
+            </div>
+        </div> <!-- main_nav_wrap -->
+
+            
+
+
+
         <div class="top_banner_wrap section1">
             <div class="top_banner_wrap_text">
                 <h1>In <span>Home</span> Massage</h1>
                 <h2>屬於你的健康與美麗</h2>  
                 <a href="./Register_Login.html" class="button-48">book now</a>
             </div>
-        </div>
-        <!-- <div class="down"><i class="fa-solid fa-caret-down"></i></div> -->
-    </header><!-- header_top_end -->
-    
+        </div> 
+        
+    </header>
+    <!-- header_top_end -->
 <!-- ================================================ -->
 <!---------------------- article ----------------------->
 <!-- ================================================ -->
@@ -127,7 +209,7 @@
             </div><!-- service_item_end -->
 
 
-            <div class="second_service_item">
+            <!-- <div class="second_service_item">
 
                 <div class="second_service_text_group">
                     <h2 class="h2_style">How&ensp;it&ensp;works</h2>
@@ -163,12 +245,12 @@
                 </div>
 
                 <a href="./Register_Login.html" class="button-48">book now</a>
-            
+             -->
             </div><!-------- second_service_item end------>
 
 
             <!------ third item ------>
-            <div class="third_service_item">
+            <!-- <div class="third_service_item">
 
                 <div class="third_service_item_wrap">
                     <h3 class="h3_style">SPA中心專屬尊寵呵護</h3>
@@ -178,10 +260,10 @@
                 </div>
 
                 <img src="./sourse/01.index/treatmenter02.jpg" alt="">
-                
+                 -->
             </div><!-------- third_item end ------>
 
-            <div class="four_service_item">
+            <!-- <div class="four_service_item">
 
                 <img src="./sourse/01.index/treatmenter01.png" alt="">
 
@@ -192,13 +274,13 @@
                         每一位老師都有五年以上的美療師服務經驗
                         我們是你最好的選擇。</p>
                     <a href="./Register_Login.html" class="button-48">線上預約</a>
-                </div>  
+                </div>   -->
                 
             </div><!-------- four_item end ------->
     
 <!-------------------------- 客戶回饋 ------------------------------>
 
-            <div class="feedback_container">
+            <!-- <div class="feedback_container">
                 
                 <div class="textcontent">
                     <h3 class="h3_style">這裡超過100,000會員使用網站服務</h3>
@@ -236,11 +318,11 @@
                         <h4 class="h4_style">john</h4>
                         <h5 class="h5_style">back End Developer</h5>  
                     </li>
-                </ul>
+                </ul> -->
 
             </div><!------ feedback_container end ------->
 <!---------------------------- item6 引導用戶線上預約------------------------>
-            <div class="item6_wrapper">
+            <!-- <div class="item6_wrapper">
                 <div class="item6_wrap">
 
                     <div class="item6_content">
@@ -250,10 +332,10 @@
                     
                 </div>
                 <a href="./Register_Login.html" class="button-48">馬上預約</a>
-            </div>
+            </div> -->
         </article><!----------- middle_end ---------------->
 <!------------------------------ footer  -------------------------------------->
-        <footer class="wrap_footer">
+        <!-- <footer class="wrap_footer">
             <div class="footer_container">
 
                 
@@ -307,15 +389,15 @@
             <div class="footer_container2">
                 <h5 class="h5_style">本網站為緯育TibaMe前端工程師班第80期學員專題作品，本平台僅供學習、展示之用。<br>參考資源: QI SHISEIDO SALON AND SPA |AVEDA|sparkle|Relax33|Aesop|CLARINS|gribbble。</h5>
             </div>
-        </footer>
+        </footer> -->
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script>
+    let lastPos = 0
+    const nav = document.querySelector('#nav');
+    const section1 = document.querySelector('.section1');
 
-        <script>
-            let lastPos = 0
-const nav = document.querySelector('#nav');
-const section1 = document.querySelector('.section1');
-
-// 1. 消失
-document.addEventListener('scroll',function(){
+    // 1. 消失
+    document.addEventListener('scroll',function(){
     let currentPos =  window.scrollY;
   //   往下滑
     if(currentPos > lastPos){
@@ -325,6 +407,7 @@ document.addEventListener('scroll',function(){
     }
     lastPos = currentPos;
 });
+
 
 </script>
 
