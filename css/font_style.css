@@ -3,8 +3,45 @@
 body{
     font-family: Didot, serif,sans-serif,'Noto Serif TC', serif;
 }
+.button-27 {
+    appearance: none;
+    background-color: #fbc272;
+    border: 2px solid #f5c98f;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-width: 0;
+    padding: 10px;
+    /* text-align: center; */
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    
+    will-change: transform;
+}
 
+.button-27:disabled {
+    pointer-events: none;
+}
 
+.button-27:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 5px 12px;
+    transform: translateY(-2px);
+}
+
+.button-27:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
 
 /* CSS */
 .button-83 {
@@ -44,29 +81,7 @@ body{
     box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81,41,10,0.1), 0px 2px 2px rgba(81,41,10,0.2);
 }
 
-/* CSS */
-.button-2 {
-    background-color: rgba(51, 51, 51, 0.05);
-    border-radius: 8px;
-    border-width: 0;
-    color: #333333;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 10px 12px;
-    text-align: center;
-    transition: all 200ms;
-    vertical-align: baseline;
-    white-space: nowrap;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
+
 
 
 /* CSS */

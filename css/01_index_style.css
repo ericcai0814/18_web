@@ -4,11 +4,10 @@ body{
     background-color: #FFFEF2;
     line-height: 1.5;
     color: #333333;
+    box-sizing: border-box;
 }
 /* scrollDownChangeColor */
-.scrolled{
-    background-color: #f0ead2;
-}
+
 
 .header_bg{
     background-image: url("../sourse/01.index/banner1.png");
@@ -33,189 +32,133 @@ body{
     position: fixed;
     z-index: 999;
 }
-
-/* logo設定 */
-.logo{
-    flex-grow: 1;
-    width: 5%;
-}
-.logo img{
-    display: block;
-    width: 200px;
-    padding-top: 10px; 
-    padding-left: 30px;
-    /* vertical-align: middle; */
-} 
-
-.logo a{
-    display: block;
-    width: 300px;
-    margin-right: 180px;
-}
-
-
 /* 主導覽列位置及寬度 */
 .navigate{
     max-width: 1280px;
     display: flex;
     margin: 0 auto;
-
-    
+    min-height: 77.55px;
 }
 
-/* 主導覽flex橫排 */
-.main_nav_wrap1{
+
+/* logo設定 */
+.logo{
+    width: 30%;
+}
+.logo img{
+    display: block;
+    width: 100%;
+    padding: 10px 0 0 60px;
+} 
+.logo a{
+    display: block;
+    width: 240px;
+}
+
+
+/* 主導覽，選單iocn區flex橫排 */
+.main_nav_wrap, .Register_Login_and_cart_shopping_wrap{
     display: flex;
-    flex-grow: 1;
+    margin-left: auto;
+}
+.Register_Login_and_cart_shopping_wrap{
+    width: 22%;
+}
+.Register_Login_and_cart_shopping_item_main_nav{
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+    width: 90%;
+    text-align: center;
+    transition: all .4s linear;
+}
+/* 主導覽寬度 */
+.main_nav_wrap{
+    width: 40%;
 }
 
 /* 導覽列子層 flex排版 */
-.main_nav{
+.main_nav, .Register_Login_and_cart_shopping_item{
     display: flex;
     justify-content:center;
     align-items: center; 
     flex-grow: 1;
-    width: 100px;
-    position: relative;
+    width: 90%;
     text-align: center;
     transition: all .4s linear;
 }
 
-.main_nav:hover {
+
+
+/* 選單hover變色 */
+.main_nav:hover, .Register_Login_and_cart_shopping_item:hover{
     background: #FFecd1;
 }
-
-.main_nav a{
+/* 選單文字underline關掉 */
+.main_nav a, .Register_Login_and_cart_shopping_item a{
     text-decoration: none;
     color: #78290F;
     position: relative;
 }
 
-/* 控制登入及購物車 */
-.main_nav_item{
-    display: flex;
-    align-items: center;
-}
-.main_nav_item_a{
-    display: flex;
-    align-items: center;
-}
+/* 漢堡線設定 */
 .fa-solid{
     margin-right: 5px;
 }
 
+.Register_Login_and_cart_shopping .menu-icon{
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: auto;/* 置右 */
+}
+.menu-icon i{
+    font-size: 40px;/* 登入及購物車icon */
+    display: none;/* 在RWD414px時顯示 */
+}
 
-/* 控制子選單 */
+/* ----------- 控制子選單位置 -----------*/
 .sub_nav{
-    display: inline-block;
-    display: none;
+    display: none; /* 在選單hover時顯示sub_nav */
     position: absolute;
     width: 100%;
     left: 0px;
-    top: 66px;
+    top: 78px;
     background-color: #ee9d52b8;
     border-radius: 0px 0px 10px 10px ;
 
-    z-index: 1;
+    z-index: 20;
 }
+
+.main_nav:hover .sub_nav{
+    display: block;
+}
+
 .sub_nav a {
     display: block;
     padding-bottom: 30px;
     text-align: center;
     font-size: 18px;
 }
-.main_nav:hover .sub_nav{
-    display: block;
-    border-radius: 0px 0px 10px 10px;
-}
+/* 子選單文字變色 */
 .sub_nav a:hover{
-    display: block;
-    height: 100%;
     color: #fff;
     transition: .5s;
 }
 
 /* 購物車及會員登入 */
-.main_nav_wrap2{
+.Register_Login_and_cart_shopping .menu-icon{
     display: flex;
     width: 20%;
+    display: none;/* 在RWD414px時顯示 */
 }
 
-/* 漢堡線 */
-.menu-icon{
-    padding: 10px;
-    box-sizing: border-box;
-    margin-left: auto;
 
-    display: none;
-}
-.menu-icon i{
-    font-size: 20px;
-}
+/* 尚未設定html JS */
+/* JS控制選單移入 */
 
-/*--------------- 手機版選單 ----------------*/
-#mobile_mainNav{
-    display: none;
-}
-.mobile_wrap{
-    
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    background-color: #FFFEF2;
 
-    position: absolute;
-    left: 0px;
-    top: 50px;
 
-    z-index: 10;
-}
-.mobile_wrap_main_nav{
-    border: 1px solid #ccc;
-}
-.mobile_wrap_main_nav_item{
-    text-decoration: none;
-    text-align: center;
-    font-size: 16px;
-    color: #333333;
-    
-}
 
-.item_text{
-    display: flex;
-    text-decoration: none;
-    align-items: center;
-    padding: 10px;
-    height: 40px;
-}
-.item_text i{
-    margin-left: auto;
-    margin-right: 20px;
-    padding: 10px;
-}
-
-/* 手機版子選單 */
-#mobile_subNav{
-    display: none;
-}
-.mobile_wrap_main_nav_item_subNav{
-    width: 100%;
-    height: 100vh;
-
-    position: absolute;
-}
-
-.mobile_wrap_sub_nav_item{
-    text-decoration: none;
-    color: #333333;
-}
-.sub_text{
-    align-items: center;
-    font-size: 12px;
-    border: 1px solid #ccc;
-    height: 40px;
-}
 
 /* ================================= */
 /* ---------- top_banner_text ------ */
@@ -305,7 +248,7 @@ body{
 }
 
 /* =========================================== */
-/* ------------------ middle_article---------- */
+/* --------------- middle_article------------- */
 /* =========================================== */
 
 
@@ -313,38 +256,24 @@ body{
 #middle{
     overflow: hidden;
     width: 100%;
-    /* max-width: 1280px; */
     margin: 0 auto;
-    
 }
 
-/* 設定article寬為80% */
-.wrapper_middle{
-    width: 100%;
-}
-
-
-/* 服務項目 */
+/* 服務項目_控制大小方向 */
 .first_service_item{
     max-width: 1280px;
     margin: 0 auto 50px;
-
+}
+/* 服務項目_title */
+.first_service_text{
     position: relative;
 }
-
-.first_service_text_group{
-    position: relative;
-    /* outline: 2px solid black; */
-    
-}
-.first_service_text_group h3{
+.first_service_text h3{
     margin-top: 110px;
     margin-bottom: 50px;
-
-    position: relative;
 }
 /* 裝飾線 */
-.first_service_text_group .text_left_line{
+.first_service_text .text_left_line{
     content: "";
     display: block;
     width: 120px;
@@ -355,8 +284,7 @@ body{
     top: 50%;
     left: 12.5%;
 }
-
-.first_service_text_group .text_right_line{
+.first_service_text .text_right_line{
     content: "";
     display: block;
     width: 120px;
@@ -368,29 +296,26 @@ body{
     right: 12.5%;
 }
 
-
+/* 服務項目_content_控制大小方向 */
 .first_service_item_group{
-    max-width: 1280px;
     margin: 0 auto;
-    /* outline: 2px solid black; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-
 }
 
-
-.first_service_item_group .item{
+/* card大小及排列方式 */
+.first_service_item_group_card{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 225px
+    max-width: 225px/* 剛好符合flex_wrap斷行，縮500px時變兩欄 */
 }
 
-.first_service_item_group img{
+.first_service_item_group_card img{
     min-width: 200px;
     width: 100%;
     box-shadow: #ccc 0px 0px 10px ;
@@ -399,32 +324,28 @@ body{
     
 }
 
-.first_service_item_group h5{
+.first_service_item_group_card h5{
     text-align: center;
-    text-align: center;
-    font-size: 38px;
     letter-spacing: 5px;
-    /* outline: 2px solid black; */
 }
 
 /* 手機版414px開啟 */
-.open_moible1{
+.open_mobile{
     display: none;  
-    
 }
-.open_moible1_itemBg1{
+.open_mobile_itemBg1{
 background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sourse/01.index/mobile/mobile_service01.png);
 }
-.open_moible1_itemBg2{
+.open_mobile_itemBg2{
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sourse/01.index/mobile/mobile_service02.png);
     }
-.open_moible1_itemBg3{
+.open_mobile_itemBg3{
 background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sourse/01.index/mobile/mobile_service03.png);
 }
-.open_moible1_itemBg4{
+.open_mobile_itemBg4{
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sourse/01.index/mobile/mobile_service04.png);
     }
-.open_moible1_itemBg1, .open_moible1_itemBg2, .open_moible1_itemBg3, .open_moible1_itemBg4{
+.open_mobile_itemBg1, .open_mobile_itemBg2, .open_mobile_itemBg3, .open_mobile_itemBg4{
     background-position: center center;
     background-size: cover;
     min-width: 200px;
@@ -435,8 +356,9 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
     margin-bottom: 10px;    
     text-decoration: none;
 }
-.open_moible1_itemBg1 h5, .open_moible1_itemBg2 h5, .open_moible1_itemBg3 h5, .open_moible1_itemBg4 h5{
+.open_mobile_itemBg1 h5, .open_mobile_itemBg2 h5, .open_mobile_itemBg3 h5, .open_mobile_itemBg4 h5{
     margin-top: 130px;
+    font-size: 25px;
     color: #FFFEF2;
 }
 
@@ -535,8 +457,8 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
 }
 .second_service_item a{
     display: block;
-    margin: 0px auto ;
-    width: 300px;
+    margin: 20px auto 0px;
+    width: 97px;
 }
 
 
@@ -840,6 +762,8 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
     display: block;
     width: 100px;
     margin-right: 100px;
+
+    
 }
 
 .footer_logo a{

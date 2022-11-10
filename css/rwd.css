@@ -1,20 +1,17 @@
 
 @media screen and (max-width: 1200px){
-    .mobile_nav_wrap{
-        width: 10%;
-
-    }
-    .main_nav_item_a p{
-        display: none;
-    }
+    
+    /* logo縮小 */
     .logo img{
-        width: 150px;
-        flex-grow: 1;
+        width:80%;
+        padding-top: 20px;
     }
+
+
     /* banner_text */
     .top_banner_wrap_text{
         width: 70%;
-        top: 20%;
+        top: 30%;
         font-size: 50px;
     }
     .top_banner_wrap h1{
@@ -29,36 +26,105 @@
         font-size: 25px;
         width: 300px;
     }
-    /* 裝飾線 */
-    .first_service_text_group .text_left_line{
+
+
+    /* 裝飾線消失 */
+    .first_service_item .text_left_line{
         display: none;
     }
-    .first_service_text_group .text_right_line{
+    .first_service_item .text_right_line{
         display: none;
     }
-    
 }
+
 @media screen and (max-width: 990px){
-    .logo img{
-        width: 120px;
+    /* 在990px就先讓選單到移到銀幕外待機 */
+    .navigate{
+        position: relative;
+        box-sizing: border-box;
     }
-    .main_nav{
-        display: none;
-    }
+
     .main_nav_wrap{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFEF2;
+        width: 100%;
+        border: 0;
+        z-index: 20;
+
+        position: absolute;
+        left: 0;
+        top: 77px;
+        transition: .5s;
+        transform: translateX(120%);
+        /* 目前在銀幕外待機 */
     }
-    .menu-icon{
+    /* 因為權重要大於原本的class(選單位移進來) */
+    .main_nav_wrap.is-activeIn {
+        transform: translateX(0);
+    }
+    /* 遮色片 */
+    .overfloat{
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    }
+    .main_nav_wrap-main:before{
+        content: "";
         display: block;
-        margin-right: 10px;
+        height: 79%;
+        width: 100%;
+        overflow: auto;
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+        
+        position: absolute;
+        top: 255px;
+        left: 0px;
+    } 
+    .main_nav .sub_nav{
+        display: none;
+        border-radius: 0;
+        background-color: #FFFEF2;
+        width: 100%;
+        border: 0;
+        
+        position: absolute;
+        top: 0px;
+        left: 0px;
     }
     
+
+    .main_nav{
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid #ccc;
+        height: 50px;
+    }
+    
+    /* 控制漢堡線到最右邊 */
+    .menu-icon{
+        margin-left: auto;
+    }
+    /* 讓登入及購物車的文字消失 */
+    .Register_Login_and_cart_shopping_item_main_nav p{
+        display: none;
+    }
+
+    /* 漢堡線 */
+    .menu-icon i{
+        display: block;
+        margin: 10px 10px 0 50px;
+    }
+    .Register_Login_and_cart_shopping_item_main_nav i{
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 800px){
     /* banner_text */
     .top_banner_wrap_text{
         width: 70%;
-        top: 20%;
+        top: 35%;
     }
     .top_banner_wrap h1{
         width: 100%;
@@ -81,9 +147,8 @@
         padding: 0;
         font-size: 10px;
     }
-    .first_service_text_group h3{
+    .first_service_text h3{
         font-size: 35px;
-        
     }
     
 }
@@ -98,14 +163,23 @@
     /* -------- navigator -------- */
     .navigate{
         max-width: 414px;
-        outline: auto;
     }
     
     .logo img{
-        width: 100px;
-        padding-top: 15px;
+        width: 140px;
+        padding-top: 26px;
         margin-right: auto;
+        padding-left: 20px;
     }
+    .main_nav_wrap, .Register_Login_and_cart_shopping_wrap{
+        margin-left: 170px;
+    }
+    /* 漢堡線 */
+    .menu-icon i{
+        display: block;
+        margin: 10px 10px 0 10px;
+    }
+
     .top_banner_wrap {
         max-width: 414px;    
     }
@@ -141,47 +215,110 @@
 
         position: relative;/* 給標題定位 */
     }
-    .first_service_text_group h3{
-        font-size: 20px;
+    .first_service_text h3{
+        font-size: 22px;
         margin: 20px 0 20px;
         text-align: center;
     }
-    /* 裝飾線消失 */
-    .first_service_text_group .text_left_line{
-        display: none;
-    }
-    .first_service_text_group .text_right_line{
-        display: none;
-    }
 
 /* 控制第一個服務項目更換樣式 */
-    .desk_close1{
+    .desk_close{
         display: none;
     }
-    .open_moible1{
+    .open_mobile{
         display: block;
     }
 
 /* 第一個服務項目樣式設定 */
-    .open_moible1{
+    .open_mobile{
         max-width: 414px;
         display: flex;
         
     }
-    .open_moible1 .item{
+    .open_mobile .first_service_item_group_card{
         gap: 10px;
         
     }
-    .open_moible1 img{
+    .first_service_item_group_card img{
         width: 100%;
         background-color: rgba(0,0,0,0.5);
     }
-/* 文字移到圖片上，同時加遮色片 */
-    .open_moible1 .item{
-        position: relative;
+
+/* 第二個服務項目樣式設定 */
+    .second_service_text_group h2{
+        font-size: 25px;
+        margin-bottom: 0px
     }
-    .open_moible1 h5{
-        
+    .second_service_text_group h4{
+        font-size: 20px;
+    }
+
+    .second_service_item_group{
+        flex-direction: column;
+        width: 300px;
+        height: auto;
+        gap: 86px;
+    }
+    .second_service_item_wrap{
+        width: 100%;
+    }
+    .second_service_item {
+        margin: 0 auto 100px
+    }
+    
+    /* 第三個服務項目樣式設定 */
+    .third_service_item{
+        flex-direction: column;
+    }
+    .third_service_item_wrap{
+        width: 100%;
+        order: 2;
+    }
+    .third_service_item img{
+        width: 100%;
+        order: 1;
+    }
+    .third_service_item_wrap h3{
+        padding: 20px 0px 0px;
+        font-size: 25px;
+    }
+    .third_service_item_wrap p{
+        font-size: 16px;
+    }
+    .third_service_item_wrap a{
+        margin-top: 0;
+    }
+    .third_service_item::after{
+        display: none;
+    }
+
+    /* 第三個服務項目樣式設定 */
+    .four_service_item{
+        flex-direction: column;
+    }
+    .four_service_item_wrap{
+        width: 100%;
+        order: 2;
+    }
+    .four_service_item img{
+        width: 100%;
+        order: 1;
+    }
+    .four_service_item_wrap h3{
+        padding: 20px 0px 0px;
+        font-size: 25px;
+    }
+    .four_service_item_wrap p{
+        font-size: 16px;
+        margin-left: 0;
+        margin-bottom: 0;
+        padding: 10px;
+    }
+    .four_service_item_wrap a{
+        margin-top: 0;
+    }
+    .four_service_item::after{
+        display: none;
     }
 
 }
