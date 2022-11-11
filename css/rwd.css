@@ -6,7 +6,9 @@
         width:80%;
         padding-top: 20px;
     }
-
+    .Register_Login_and_cart_shopping_wrap{
+        width: 23%;
+    }
 
     /* banner_text */
     .top_banner_wrap_text{
@@ -39,73 +41,17 @@
 
 @media screen and (max-width: 990px){
     /* 在990px就先讓選單到移到銀幕外待機 */
-    .navigate{
-        position: relative;
-        box-sizing: border-box;
-    }
 
     .main_nav_wrap{
-        display: flex;
-        flex-direction: column;
-        background-color: #FFFEF2;
-        width: 100%;
-        border: 0;
-        z-index: 20;
-
-        position: absolute;
-        left: 0;
-        top: 77px;
-        transition: .5s;
-        transform: translateX(120%);
-        /* 目前在銀幕外待機 */
-    }
-    /* 因為權重要大於原本的class(選單位移進來) */
-    .main_nav_wrap.is-activeIn {
-        transform: translateX(0);
-    }
-    /* 遮色片 */
-    .overfloat{
-        overflow: hidden;
-        height: 100%;
-        width: 100%;
-        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
-    }
-    .main_nav_wrap-main:before{
-        content: "";
-        display: block;
-        height: 79%;
-        width: 100%;
-        overflow: auto;
-        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
-        
-        position: absolute;
-        top: 255px;
-        left: 0px;
-    } 
-    .main_nav .sub_nav{
         display: none;
-        border-radius: 0;
-        background-color: #FFFEF2;
-        width: 100%;
-        border: 0;
-        
-        position: absolute;
-        top: 0px;
-        left: 0px;
     }
     
 
-    .main_nav{
-        width: 100%;
-        height: 50px;
-        border-bottom: 1px solid #ccc;
-        height: 50px;
-    }
-    
     /* 控制漢堡線到最右邊 */
     .menu-icon{
         margin-left: auto;
     }
+    
     /* 讓登入及購物車的文字消失 */
     .Register_Login_and_cart_shopping_item_main_nav p{
         display: none;
@@ -121,7 +67,7 @@
     }
 }
 @media screen and (max-width: 800px){
-    /* banner_text */
+    /* banner_文字 */
     .top_banner_wrap_text{
         width: 70%;
         top: 35%;
@@ -147,8 +93,9 @@
         padding: 0;
         font-size: 10px;
     }
+    /* 第一個service title */
     .first_service_text h3{
-        font-size: 35px;
+        font-size: 30px;
     }
     
 }
@@ -161,18 +108,87 @@
         height: 240px;
     }
     /* -------- navigator -------- */
+    /* 在990px就先讓選單到移到銀幕外待機 */
     .navigate{
+        position: relative;
+        box-sizing: border-box;
         max-width: 414px;
     }
-    
     .logo img{
         width: 140px;
         padding-top: 26px;
         margin-right: auto;
         padding-left: 20px;
     }
-    .main_nav_wrap, .Register_Login_and_cart_shopping_wrap{
-        margin-left: 170px;
+    
+    
+    .main_nav_wrap{
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFEF2;
+        width: 100%;
+        border: 0;
+        z-index: 20;
+
+        position: absolute;
+        left: 0;
+        top: 77px;
+        transition: .5s;
+        transform: translateX(120%);
+        /* 目前在銀幕外待機 */
+    }
+
+    .main_nav_wrap{
+        height: 400px;
+        width: 100%;
+    }
+    /* 因為權重要大於原本的class(選單位移進來) */
+    .main_nav_wrap.is-activeIn {
+        transform: translateX(0);
+    }
+    /* 選單移入後的大小 */
+    .main_nav{
+        width: 100%;
+        height: 100vh;
+    }
+    /* 遮色片 */
+    .overfloat{
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    }
+
+    .main_nav_wrap-main:before{
+        content: "";
+        display: block;
+        height: 79%;
+        width: 100%;
+        overflow: auto;
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+        
+        position: absolute;
+        top: 255px;
+        left: 0px;
+    } 
+    .main_nav .sub_nav{
+        display: none;
+        border-radius: 0;
+        background-color: #FFFEF2;
+        width: 100%;
+        border: 0;
+        
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    
+    .Register_Login_and_cart_shopping_wrap{
+        margin-left: 130px;
+    }
+    
+    .Register_Login_and_cart_shopping_wrap :first-child{
+        margin-right: 10px;
     }
     /* 漢堡線 */
     .menu-icon i{
@@ -180,6 +196,7 @@
         margin: 10px 10px 0 10px;
     }
 
+    /* header文字 */
     .top_banner_wrap {
         max-width: 414px;    
     }
@@ -252,7 +269,7 @@
     .second_service_text_group h4{
         font-size: 20px;
     }
-
+    
     .second_service_item_group{
         flex-direction: column;
         width: 300px;
@@ -262,6 +279,9 @@
     .second_service_item_wrap{
         width: 100%;
     }
+    .second_service_item_wrap h2{
+        margin-bottom: 0;
+    }
     .second_service_item {
         margin: 0 auto 100px
     }
@@ -269,6 +289,7 @@
     /* 第三個服務項目樣式設定 */
     .third_service_item{
         flex-direction: column;
+        margin-bottom: 130px;
     }
     .third_service_item_wrap{
         width: 100%;
@@ -295,6 +316,7 @@
     /* 第三個服務項目樣式設定 */
     .four_service_item{
         flex-direction: column;
+        margin-bottom: 130px;
     }
     .four_service_item_wrap{
         width: 100%;
@@ -320,5 +342,45 @@
     .four_service_item::after{
         display: none;
     }
+    
+
+    /* ------ 客戶回饋 -------*/
+    .feedback_container{
+        gap20
+    }
+
+    .feedback_container::before{
+        display: none;
+    }
+    .feedback_container::after{
+        display: none;
+    }
+    /* text */
+    .textcontent{
+
+    }
+
+    .feedback_container h3{
+        font-size: 25px;
+    }
+    .textcontent h6{}
+
+    .textcontent p{}
+
+    /* card_item */
+    .container_ul{
+        flex-direction: column;
+    }
+    .li_feedback_content{
+        margin-bottom: 20px;
+    }
+    .li_feedback_content .five_star{}
+    .li_feedback_content p{}
+    .li_feedback_content img{}
+    .li_feedback_content h4{}
+    .li_feedback_content h5{}
+    
+
+    
 
 }
