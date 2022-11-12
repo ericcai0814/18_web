@@ -582,40 +582,11 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
 
 
 
-
 /* --------------- feedback_位置控制 --------------- */
 .feedback_container{
-    /* outline: 2px solid black; */
-    display: flex;
     max-width: 1280px;
-    flex-direction: column;
     align-items: center;
     margin: 150px auto 150px;
-    position: relative
-}
-/* ------------偽元素 向左翻頁按鈕---------------- */
-.feedback_container::after{
-    content: "";
-    border-color: transparent #FFAA00 transparent transparent;
-    border-style: solid solid solid solid;
-    border-width: 10px;
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    top: 70%;
-    left: 5%;
-}
-/* ------------偽元素 向右翻頁按鈕---------------- */
-.feedback_container::before{
-    content: "";
-    border-color: transparent transparent transparent #FFAA00;
-    border-style: solid solid solid solid;
-    border-width: 10px;
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    top: 70%;
-    right: 5%;
 }
 /* ------------------- feedback_title --------------- */
 .textcontent{
@@ -671,6 +642,19 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
     font-size: 1rem;
     border-bottom: 1px solid #000;
     line-height: 16px;
+    margin-bottom: 5px;
+}
+.splide__slide{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.splide .splide__pagination {
+    bottom: -1.5em;
+    
+}
+.splide__pagination__page.is-active{
+    background-color:#000;
 }
 
 
