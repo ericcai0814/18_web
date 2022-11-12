@@ -1,5 +1,6 @@
 @import url("reset.css");
 
+
 body{
     background-color: #FFFEF2;
     line-height: 1.5;
@@ -262,7 +263,7 @@ body{
 /* 服務項目_控制大小方向 */
 .first_service_item{
     max-width: 1280px;
-    margin: 0 auto 50px;
+    margin: 0 auto 180px;
 }
 /* 服務項目_title */
 .first_service_text{
@@ -589,7 +590,7 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
     max-width: 1280px;
     flex-direction: column;
     align-items: center;
-    margin: 150px auto 50px;
+    margin: 150px auto 150px;
     position: relative
 }
 /* ------------偽元素 向左翻頁按鈕---------------- */
@@ -747,7 +748,7 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
     margin: 0 auto 10   0px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
     padding-top: 50px;
     box-sizing: border-box;
     width: 100%;
@@ -777,9 +778,8 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
     flex-direction: column;
     align-items: center;
     padding: 10px 0 0 20px;
-    min-width: 202.5px;
     margin-left: 30px;
-    /* outline:  2px solid black; */
+    width: 12%;
 }
 
 .col_link h5{
@@ -787,7 +787,7 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
     margin-right: auto;
 }
 .col_link span{
-    width: 70%;
+    width: 100%;
     border-bottom: 2px solid #ccc ;
     margin: 0 auto 30px 0;
 }

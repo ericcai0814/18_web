@@ -202,6 +202,13 @@
     display: none;
 }
 
+/* ------ footer ------*/
+.footer_container{
+}
+
+.col_link {
+    min-width: 202.5px;
+    margin-left: 30px;
 
     
 }
@@ -513,7 +520,9 @@
     .footer_container{
 
     }
-    .col_link{}
+    .col_link{
+        min-width: 121.5px;
+    }
     .col_link h5{}
     .col_link span{}
     .col_link li{
@@ -523,4 +532,9 @@
     .footer_container2{}
     .footer_container2 h5{}
 
+
+   
+    /* ------------------ */
+    /* ------ ------*/
+    /* ------------------ */
 }

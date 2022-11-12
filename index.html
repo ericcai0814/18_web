@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/01_index_style.css">
     <link rel="stylesheet" href="./css/font_style.css">
     <link rel="stylesheet" href="./css/rwd.css">
@@ -21,7 +22,7 @@
 
     <header id="top" class="header_bg">
 <!-- ------------------- navigate ------------------- -->
-        <div class="navigate_wrap">
+        <div class="navigate_wrap nav">
 
             <div class="navigate">
                 
@@ -108,7 +109,7 @@
         <article id="middle">
 
 
-            <div class="first_service_item">
+            <div class="first_service_item" data-aos="fade-up" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="5000">
 
                 <div class="first_service_text">
                     <h3 class="h3_style"><span class="text_left_line"></span>只要在家 您就能享受到最好的服務<span class="text_right_line"></span></h3>
@@ -134,7 +135,7 @@
                     </div>
                     
                     <!-- mobile 414px 切換下面這個版本 --><!-- 用RWD關掉 -->
-                    <div class="first_service_item_group open_mobile">
+                    <div class="first_service_item_group open_mobile" data-aos="fade-up" data-aos="zoom-in" data-aos-delay="400">
                         <item class="first_service_item_group_card">
                             <a href="./treatment_class.html" class="open_mobile_itemBg1">
                                 <h5 class="h5_style">經典SPA</h5>
@@ -159,7 +160,8 @@
             </div><!-- service_item_end -->
 
 
-            <div class="second_service_item">
+            <div class="second_service_item" data-aos="fade-up"
+            data-aos-anchor-placement="center-center" data-aos="zoom-in" >
 
                 <div class="second_service_text_group">
                     <h2 class="h2_style">How&ensp;it&ensp;works</h2>
@@ -200,7 +202,7 @@
 
 
             <!------ third item ------>
-            <div class="third_service_item">
+            <div class="third_service_item" data-aos="fade-left"  data-aos="zoom-in" data-aos-delay="400">
 
                 <div class="third_service_item_wrap">
                     <h3 class="h3_style">SPA中心專屬尊寵呵護</h3>
@@ -213,7 +215,7 @@
                 
             </div><!-------- third_item end ------>
 
-            <div class="four_service_item">
+            <div class="four_service_item" data-aos="fade-right"  data-aos="zoom-in" data-aos-delay="400">
 
                 <img src="./sourse/01.index/treatmenter01.png" alt="">
 
@@ -290,7 +292,7 @@
 
                 
                 <ul class="col_link"> 
-                    <h5 class="h5_style">訂單與協助</h5>
+                    <h5 class="h5_style">協助服務</h5>
                     <span></span>
                     <li><a href="#">聯絡我們</a></li>
                     <li><a href="#">常見問答</a></li>
@@ -340,6 +342,7 @@
                 <h5 class="h5_style">本網站為緯育TibaMe前端工程師班第80期學員專題作品，本平台僅供學習、展示之用。<br>參考資源: QI SHISEIDO SALON AND SPA |AVEDA|sparkle|Relax33|Aesop|CLARINS|gribbble。</h5>
             </div>
         </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./js/jquery-3.6.1.min.js"></script>
 <script>
     let lastPos = 0
@@ -365,6 +368,9 @@
     $(".menu-icon").on("click", function(){
     $("body").toggleClass("overfloat");
     });
+
+// AOS 
+    AOS.init();
 </script>
 
     
