@@ -1,7 +1,7 @@
 
 @media screen and (max-width: 1200px){
     
-    /* logo縮小 */
+    /*------- logo縮小 -------*/
     .logo img{
         width:80%;
         padding-top: 20px;
@@ -10,7 +10,7 @@
         width: 23%;
     }
 
-    /* banner_text */
+    /*------- banner_text -------*/
     .top_banner_wrap_text{
         width: 70%;
         top: 30%;
@@ -30,13 +30,25 @@
     }
 
 
-    /* 裝飾線消失 */
+    /*------- 裝飾線消失 -------*/
     .first_service_item .text_left_line{
         display: none;
     }
     .first_service_item .text_right_line{
         display: none;
     }
+
+
+
+    /*------- feedback -------*/
+    .container_ul{
+        overflow: hidden;
+        gap: 20px;
+    }
+    .li_feedback_content{
+        flex-shrink: 0;
+    }
+
 }
 
 @media screen and (max-width: 990px){
@@ -47,17 +59,17 @@
     }
     
 
-    /* 控制漢堡線到最右邊 */
+    /*------- 控制漢堡線到最右邊 -------*/
     .menu-icon{
         margin-left: auto;
     }
     
-    /* 讓登入及購物車的文字消失 */
+    /*------- 讓登入及購物車的文字消失 -------*/
     .Register_Login_and_cart_shopping_item_main_nav p{
         display: none;
     }
 
-    /* 漢堡線 */
+    /*------- 漢堡線 -------*/
     .menu-icon i{
         display: block;
         margin: 10px 10px 0 50px;
@@ -67,7 +79,7 @@
     }
 }
 @media screen and (max-width: 800px){
-    /* banner_文字 */
+    /*------- banner_文字 -------*/
     .top_banner_wrap_text{
         width: 70%;
         top: 35%;
@@ -97,17 +109,111 @@
     .first_service_text h3{
         font-size: 30px;
     }
+
+
+
+
+
+
+
+    /*------- 第二個服務項目樣式設定 -------*/
+    .second_service_text_group h2{
+        font-size: 25px;
+        margin-bottom: 0px
+    }
+    .second_service_text_group h4{
+        font-size: 20px;
+    }
+    
+    .second_service_item_group{
+        flex-wrap:  wrap;
+        height: auto;
+        gap: 86px;
+    }
+    .second_service_item_wrap{
+        width: 100%;
+        max-width: 300px;
+    }
+    .second_service_item_wrap h2{
+        margin-bottom: 0;
+    }
+    .second_service_item {
+        margin: 0 auto 100px
+    }
+
+
+
+
+
+/*------- 第三個服務項目樣式設定 -------*/
+.third_service_item{
+    flex-direction: column;
+    margin-bottom: 130px;
+}
+.third_service_item_wrap{
+    width: 100%;
+    order: 2;
+}
+.third_service_item img{
+    width: 100%;
+    order: 1;
+}
+.third_service_item_wrap h3{
+    padding: 20px 0px 0px;
+    font-size: 25px;
+}
+.third_service_item_wrap p{
+    font-size: 16px;
+}
+.third_service_item_wrap a{
+    margin-top: 0;
+}
+.third_service_item::after{
+    display: none;
+}
+
+/*------- 第四個服務項目樣式設定 -------*/
+.four_service_item{
+    flex-direction: column;
+    margin-bottom: 130px;
+}
+.four_service_item_wrap{
+    width: 100%;
+    order: 2;
+}
+.four_service_item img{
+    width: 100%;
+    order: 1;
+}
+.four_service_item_wrap h3{
+    padding: 20px 0px 0px;
+    font-size: 25px;
+}
+.four_service_item_wrap p{
+    font-size: 16px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 10px;
+}
+.four_service_item_wrap a{
+    margin-top: 0;
+}
+.four_service_item::after{
+    display: none;
+}
+
+
     
 }
 
 @media screen and (max-width: 414px){
-    /* -------- bannerBG -------- */
+    /* ------- bannerBG ------- */
     .header_bg{
         background-position: center;
         object-fit: cover;
         height: 240px;
     }
-    /* -------- navigator -------- */
+    /* ------- navigator ------- */
     /* 在990px就先讓選單到移到銀幕外待機 */
     .navigate{
         position: relative;
@@ -142,16 +248,16 @@
         height: 400px;
         width: 100%;
     }
-    /* 因為權重要大於原本的class(選單位移進來) */
+    /*------- 因為權重要大於原本的class(選單位移進來) -------*/
     .main_nav_wrap.is-activeIn {
         transform: translateX(0);
     }
-    /* 選單移入後的大小 */
+    /*------- 選單移入後的大小 -------*/
     .main_nav{
         width: 100%;
         height: 100vh;
     }
-    /* 遮色片 */
+    /*------- 遮色片 -------*/
     .overfloat{
         overflow: hidden;
         height: 100%;
@@ -190,7 +296,7 @@
     .Register_Login_and_cart_shopping_wrap :first-child{
         margin-right: 10px;
     }
-    /* 漢堡線 */
+    /*------- 漢堡線 -------*/
     .menu-icon i{
         display: block;
         margin: 10px 10px 0 10px;
@@ -226,7 +332,7 @@
         font-size: 5px;
     }
 
-    /* firstsection_服務項目*/
+    /*------- firstsection_服務項目 -------*/
     .first_service_item{
         max-width: 414px;
 
@@ -238,7 +344,7 @@
         text-align: center;
     }
 
-/* 控制第一個服務項目更換樣式 */
+/*------- 控制第一個服務項目更換樣式 -------*/
     .desk_close{
         display: none;
     }
@@ -246,7 +352,7 @@
         display: block;
     }
 
-/* 第一個服務項目樣式設定 */
+/*------- 第一個服務項目樣式設定 -------*/
     .open_mobile{
         max-width: 414px;
         display: flex;
@@ -261,7 +367,7 @@
         background-color: rgba(0,0,0,0.5);
     }
 
-/* 第二個服務項目樣式設定 */
+/*------- 第二個服務項目樣式設定 -------*/
     .second_service_text_group h2{
         font-size: 25px;
         margin-bottom: 0px
@@ -286,7 +392,7 @@
         margin: 0 auto 100px
     }
     
-    /* 第三個服務項目樣式設定 */
+    /*------- 第三個服務項目樣式設定 -------*/
     .third_service_item{
         flex-direction: column;
         margin-bottom: 130px;
@@ -313,7 +419,7 @@
         display: none;
     }
 
-    /* 第三個服務項目樣式設定 */
+    /*------- 第四個服務項目樣式設定 -------*/
     .four_service_item{
         flex-direction: column;
         margin-bottom: 130px;
@@ -346,7 +452,6 @@
 
     /* ------ 客戶回饋 -------*/
     .feedback_container{
-        gap20
     }
 
     .feedback_container::before{
@@ -355,7 +460,7 @@
     .feedback_container::after{
         display: none;
     }
-    /* text */
+    /*------- text -------*/
     .textcontent{
 
     }
@@ -369,18 +474,53 @@
 
     /* card_item */
     .container_ul{
-        flex-direction: column;
+        overflow: hidden;
+        gap: 15px;;
     }
     .li_feedback_content{
-        margin-bottom: 20px;
+        margin-bottom: 50px;
+        padding-bottom: 15px;
+        flex-shrink: 0;
     }
-    .li_feedback_content .five_star{}
+    .li_feedback_content .five_star{
+        font-size: 20px;
+    }
     .li_feedback_content p{}
     .li_feedback_content img{}
     .li_feedback_content h4{}
     .li_feedback_content h5{}
     
+    /*------- last-item -------*/
+    .item6_wrapper{}
+    .item6_wrap{
+        height: 200px;
+        width: 70%;
+    }
+    .item6_content{
+        height: 200px;
+        left: -17%;
+    }
+    .item6_content h3{
+        font-size: 25px;
+    }
+    .item6_content :last-child{
+        font-size: 20px;
+    }
+    .item6_wrapper a{}
 
-    
+    /*------- footer -------*/
+    .wrap_footer{}
+    .footer_container{
+
+    }
+    .col_link{}
+    .col_link h5{}
+    .col_link span{}
+    .col_link li{
+        max-width: 200px;
+    }
+    .col_link li a{}
+    .footer_container2{}
+    .footer_container2 h5{}
 
 }
