@@ -50,7 +50,7 @@ body{
 /* ============================== */
 
 .banner{
-    background-image: url(../sourse/04.treatment_content/banner2.png);
+    background-image: url(../sourse/04.treatment_content/banner2.jpg);
     width: 100%;
     height: 550px;
     background-size: cover;
@@ -164,7 +164,9 @@ body{
     align-items: center;
     flex-grow: 1;
 }
-
+.Content_text ol li{
+    list-style-type:disc;
+}
 .Content_text h2{
     width: 100%;
     margin-bottom: 30px;
@@ -192,5 +194,95 @@ body{
 @media screen and (max-width: 800px){
 }
 @media screen and (max-width: 414px){
+    /* header banner上的文字 */
+    .top_header_banner_text {
+        width: auto;
+        font-size: 50px;
+        top: 19%;
+        left: 32%;
+    }
+    /* 選擇療程服務 */
+    .firstContainer{
+        max-width: 414px;
+    }
+    .firstContainer_wrapper{
+        width: 100%;
+    }
+    .firstContainer_wrapper h1{
+        font-size: 30px;
+    }
+    .firstContainer_wrapper_wrap_click h5{
+        font-size: 14px;
+    }
+
+    /* 第二個banner */
+    .banner {
+        height: 210px;
+        background-image: linear-gradient(rgba(253, 250, 250, 0.3), rgba(0253, 250, 250, 0.3)),url(../sourse/04.treatment_content/banner2.jpg);
+    }
+    /* 第二個banner的固定寬 */
+    .container_text {
+        width: auto;
+        height: auto;
+        padding-top: 0;
+        top: 50px;
+        left: 18px;
+    }
+    /* banner上的文字 */
+    .container_text h1 {
+        font-size: 20px;
+        text-align: start;
+    }
+    .container_text h1 {
+        font-size: 20px;
+        text-align: start;
+    }
+    .container_text p {
+        font-size: 14px;
+        text-align: start;
+    }
+
+
+    /* 服務項目的甲方爸爸 */
+    .containerContent {
+        flex-direction: column;
+    }
+
+    /* 甲方爸爸說滾到前面去 */
+    .containerContent img {
+        order: 1;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 12px
+    }
+    /* 甲方爸爸說滾到後面去 */
+    .containerContent .Content_text {
+        order: 2;
+    }
     
+
+    /* 服務項目_文字說明 */
+    .Content_text h2 {
+        height: 20px;
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    .Content_text a ~ p{
+        padding: 10px;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 3px;
+    }
+    .Content_text ol{
+        padding: 10px;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 3px;
+    }
+
+    /* 來歐緊來買喔的按鈕 */
+    .containerContent_btn{
+        margin-top: 10px;
+        text-align: center;
+    }
 }

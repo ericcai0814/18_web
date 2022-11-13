@@ -202,6 +202,8 @@ body{
         top: 19%;
         left: 23%;
     }
+
+    /* 選擇療程服務 */
     .firstContainer{
         max-width: 414px;
     }
@@ -217,6 +219,9 @@ body{
     .button-83{
         padding: 1rem;
     }
+
+
+    
     /* 第二個banner */
     .banner{
         height: 210px;
@@ -242,18 +247,26 @@ body{
         font-size: 14px;
         text-align: start;
     }
-    /* 圖文介紹區 */
+
+    /* 服務介紹 */
+    /* 通通給我變直排 */
     .containerContent{
         flex-direction: column;
     }
-    .containerContent .Content_text{
-        order: 2;
-    }
+
+    /* 甲方爸爸說滾到前面去 */
     .containerContent img{
         order: 1;
         width: 80%;
         margin: 0 auto;
     }
+
+    /* 甲方爸爸說滾到後面去 */
+    .containerContent .Content_text{
+        order: 2;
+    }
+    
+    /* 文字說明 */
     .Content_text{
         width: auto;
     }
@@ -263,10 +276,14 @@ body{
         font-size: 25px;
     }
     .Content_text p{
-        padding: 16px;
-        font-size: 16px;
-        margin-bottom: 0;
+        padding: 10px;
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        letter-spacing: 3px;
     }
+
+    /* 來歐緊來買喔的按鈕 */
     .Content_text a{
         margin-bottom: 50px;
         text-align: center;
