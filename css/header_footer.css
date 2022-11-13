@@ -151,6 +151,7 @@ body{
 }
 
 .breadcrumb li {
+    box-sizing: border-box;
 	padding: 20px 0px 20px 30px;
 }
 .breadcrumb li:first-child ~li:before {
