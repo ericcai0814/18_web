@@ -1017,6 +1017,9 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
         min-width: 202.5px;
     }
 }
+
+
+
 @media screen and (max-width: 414px){
     /* ------- bannerBG ------- */
     .header_bg{
@@ -1075,17 +1078,20 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
     }
 
     .main_nav .sub_nav{
-        display: none;
+        display: block;
         border-radius: 0;
         background-color: #FFFEF2;
         width: 100%;
         border: 0;
         
         position: absolute;
-        top: 0px;
+        top: 100px;
         left: 0px;
     }
-    
+    .main_nav #sub_nav_none{
+        transition: .5s;
+        transform: translateX(-120%);
+    }
     .Register_Login_and_cart_shopping_wrap{
         margin-left: 130px;
     }

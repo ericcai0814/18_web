@@ -494,8 +494,10 @@
     // 點擊漢堡後出現子選單
     $(".menu-icon").on("click", function(){
         $(".main_nav_wrap").toggleClass("is-activeIn");
+        $(".main_nav .sub_nav").toggleClass(".main_nav #sub_nav_none");
+        
         });
-    
+        
         $(".menu-icon").on("click", function(){
         $("body").toggleClass("overfloat");
     });
