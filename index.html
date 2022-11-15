@@ -41,9 +41,9 @@
                             <a href="./treatment_class.html" class="main_nav_item">
                                 <p class="p2_style">嚴選療程</p>
                             </a>
-                            <span><i class="bi bi-caret-left"></i></span>
+                            <span class="caret-left"><i class="bi bi-caret-left"></i></span>
                             <div class="sub_nav" id="sub_nav">
-                                <div class="sub_nav_item">
+                                <div class= "sub_nav_item">
                                     <a href="./treatment_content.html">經典SPA</a>
                                     <span><i class="bi bi-caret-right"></i></span>
                                 </div class="sub_nav_item">
@@ -56,9 +56,6 @@
                                 <div class="sub_nav_item">
                                     <a href="./treatment_content.html">男士療程</a>
                                 </div>
-
-                                
-                                
                             </div>
                         </div>
     
@@ -490,39 +487,11 @@
             </div>
         </footer>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="./js/animation.js"></script>
 <script src="./js/jquery-3.6.1.min.js"></script>
 <script src="./js/splide.min.js"></script>
-<script>
-    //輪播圖
-    var splide = new Splide('.splide', {
-        type: 'loop',
-        perPage: 3,
-        autoplay: true
-    });
-    var elms = document.getElementsByClassName('splide');
-    for (var i = 0; i < elms.length; i++) {
-        new Splide(elms[i]).mount();
-    }
-    // 點擊漢堡後出現子選單
-    $(".menu-icon").on("click", function(){
-        $(".main_nav_wrap").toggleClass("is-activeIn");
-    });
-    // 我有問題！！！！！！！！！！！！！！既得來改我
-    //點擊嚴選療程按鈕，出現療程內容
-    const sub_nav = document.getElementById("sub_nav");
-    $(".main_nav span").on("click", function(){
-        $("#sub_nav").toggleClass("sub_nav_in");
-        //sub_nav.classList.toggle("sub_nav_in")
-        console.log("nav btn clicked");
-    })
+<script src="./js/AOS_scroll.js"></script>
+<script src="./js/navigator.js"></script>
+<script src="./js/index.js"></script>
 
-    // 點擊選單後 body畫面固定   
-    $(".menu-icon").on("click", function(){
-        $("body").toggleClass("overfloat");
-    });
-</script>
-
-    
 </body>
 </html>
