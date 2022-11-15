@@ -160,11 +160,6 @@ body{
 }
 
 
-/* 尚未設定html JS */
-/* JS控制選單移入 */
-
-
-
 
 
 /* ================================= */
@@ -1064,6 +1059,10 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
 /* 選單的位移按鈕這裡開啟 */
 .caret-left i{
     display: block;
+}
+.sub_nav_item{
+    display: flex;
+    align-items: center;
 }
 
 

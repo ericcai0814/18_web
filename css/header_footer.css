@@ -73,14 +73,10 @@ body{
     text-align: center;
     transition: all .4s linear;
 }
-
-
-
 /* 選單hover變色 */
 .main_nav:hover, .Register_Login_and_cart_shopping_item:hover{
     background: #FFecd1;
 }
-
 /* 選單文字underline關掉 */
 .main_nav a, .Register_Login_and_cart_shopping_item a{
     text-decoration: none;
@@ -88,11 +84,18 @@ body{
     position: relative;
 }
 
-
 /* 漢堡線設定 */
 .fa-solid{
     margin-right: 5px;
 }
+
+
+/* 選單移入按鈕，414p開啟 */
+.caret-left i{
+    display: none;
+}   
+
+
 
 .Register_Login_and_cart_shopping .menu-icon{
     padding: 10px;
@@ -127,15 +130,10 @@ body{
     text-align: center;
     font-size: 18px;
 }
-/* 子選單文字變色 */    
+/* 子選單文字變色 */
 .sub_nav a:hover{
     color: #fff;
     transition: .5s;
-}
-
-/* 子選單的位移按鈕，414px才開啟 */
-.main_nav_caretLeft{
-    display: none;
 }
 
 /* 購物車及會員登入 */
@@ -146,8 +144,60 @@ body{
 }
 
 
-/* 尚未設定html JS */
-/* JS控制選單移入 */
+
+
+
+
+
+
+
+
+
+/* ================================= */
+/* ============= 麵包屑 ============ */
+/* ================================= */
+
+.breadcrumb{
+    display: flex;
+    margin-bottom: 50px;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto 
+}
+
+.breadcrumb li {
+    box-sizing: border-box;
+	padding: 20px 0px 20px 30px;
+}
+.breadcrumb li:first-child ~li:before {
+	content: "/"; 
+	color: #ccc;
+	padding-right: 20px;
+}
+
+.breadcrumb li:last-child a {
+    color: #FF7D00; 
+    font-weight: 500;
+}
+.breadcrumb li a {
+    color: #777;
+    font-weight: 100;
+    font-size: 20px;
+    text-decoration: none;
+}
+.breadcrumb li a:hover{
+    color: #ccc;
+}
+
+
+
+
+
+
+
+
+
 /* ========================================== */
 /* ------------------footer------------------ */
 /* ========================================== */
