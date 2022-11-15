@@ -1105,7 +1105,7 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
 /* -------------- 我有問題！！！！！！ ------------ */
 
 /* ----- 子選單 ----- */
-#sub_nav{
+.sub_nav{
     display: flex;
     flex-direction: column;
     border-radius: 0;
@@ -1117,34 +1117,35 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
     position: absolute;
     top: 0px;
     left: 0px;
-    /* out */
-    transform: translateX(120%);
     z-index: 30;
+
+    transform: translateX(120%);
 }
-#sub_nav_in{
+#sub_nav{
+    display: flex;
+}
+.sub_nav a{
+    height: 100px;
+    line-height: 100px;
+    padding-bottom: 0;
+}
+.sub_nav_item{
+    display: flex;
+    align-items: center;
+}
+#sub_nav a{
+    padding-left: 20px;
+}
+sub_nav_item span{
+    font-size: 25px;
+    margin-left: 60%;
+}
+
+.main_nav .sub_nav_in{
     transform: translateX(0);
 }
-/* -------------- 我有問題！！！！！！ ------------ */
 
 
-
-
-
-
-    .sub_nav a{
-        height: 100px;
-        line-height: 100px;
-        padding-bottom: 0;
-        border-bottom: 1px solid #ccc;
-    }
-    /* 子選單移入 */
-    .sub_nav_isActiceIn{
-        transform: translateX(0%) !important;
-    }
-    
-    
-    
-    
 
     /* header文字 */
     .top_banner_wrap {
