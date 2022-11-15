@@ -337,12 +337,6 @@ body{
 
         
 @media screen and (max-width: 414px){
-
-
-/* ======================================= */
-
-
-
 /* ------- bannerBG ------- */
 .header_bg{
     background-position: center;
@@ -435,300 +429,271 @@ body{
 /* ----- 子選單 ----- */
 
 .sub_nav{
-display: flex;
-flex-direction: column;
-border-radius: 0;
-background-color: #FFFEF2;
-width: 100%;
-height: 404px;
-border: 0;
-transition: .5s;
-position: absolute;
-top: 0px;
-left: 0px;
-z-index: 30;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    background-color: #FFFEF2;
+    width: 100%;
+    height: 404px;
+    border: 0;
+    transition: .5s;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 30;
 
-transform: translateX(120%);
+    transform: translateX(120%);
 }
 .sub_nav_item:hover{
-background: #FFecd1;
+    background: #FFecd1;
 }
 
 #sub_nav{
-display: flex;
+    display: flex;
 }
 
 子選單
 .sub_nav_item{
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 }
 #sub_nav_item a{
-padding-left: 20px;
+    padding-left: 20px;
 }
 .sub_nav_item a{
-height: 100px;
-line-height: 100px;
-padding-bottom: 0;
+    height: 100px;
+    line-height: 100px;
+    padding-bottom: 0;
 }
 
 /* 子選單的位移按鈕 */
 sub_nav_item span{
-font-size: 25px;
-margin-left: 60%;
+    font-size: 25px;
+    margin-left: 60%;
 }
 
 .main_nav .sub_nav_in{
-transform: translateX(0);
+    transform: translateX(0);
+}
+
+/* header文字 */
+.top_banner_wrap {
+    max-width: 414px;    
+}
+.top_banner_wrap_text{
+    width: 55%;
+    top: 115px;
+}
+.top_banner_wrap h1{
+    width: 100%;
+    font-size: 25px;
+    padding-top: 0;
+    margin-top: 0;
+}
+.top_banner_wrap span{
+    font-size: 25px;
+}
+.top_banner_wrap h2{
+    font-size: 16px;
+    width: 200px;
+    margin: 0 0 10px;
+}
+.button-48{
+    height: 30px;
+    width: 80px;
+    line-height: 30px;
+    padding: 0;
+    font-size: 5px;
+}
+
+/*------- firstsection_服務項目 -------*/
+.first_service_item{
+    max-width: 414px;
+
+    position: relative;/* 給標題定位 */
+}
+.first_service_text h3{
+    font-size: 22px;
+    margin: 20px 0 20px;
+    text-align: center;
+}
+
+/*------- 控制第一個服務項目更換樣式 -------*/
+.desk_close{
+    display: none;
+}
+.open_mobile{
+    display: block;
+}
+
+/*------- 第一個服務項目樣式設定 -------*/
+.open_mobile{
+    max-width: 414px;
+    display: flex;
+    
+}
+.open_mobile .first_service_item_group_card{
+    gap: 10px;
+    
+}
+.first_service_item_group_card img{
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/*------- 第二個服務項目樣式設定 -------*/
+.second_service_text_group h2{
+    font-size: 25px;
+    margin-bottom: 0px
+}
+.second_service_text_group h4{
+    font-size: 20px;
+}
+
+.second_service_item_group{
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    gap: 86px;
+}
+.second_service_item_wrap{
+    width: 100%;
+}
+.second_service_item_wrap h2{
+    margin-bottom: 0;
+}
+.second_service_item {
+    margin: 0 auto 100px
+}
+
+/*------- 第三個服務項目樣式設定 -------*/
+.third_service_item{
+    flex-direction: column;
+    margin-bottom: 130px;
+}
+.third_service_item_wrap{
+    width: 100%;
+    order: 2;
+}
+.third_service_item img{
+    width: 100%;
+    order: 1;
+}
+.third_service_item_wrap h3{
+    padding: 20px 0px 0px;
+    font-size: 25px;
+}
+.third_service_item_wrap p{
+    font-size: 16px;
+}
+.third_service_item_wrap a{
+    margin-top: 0;
+}
+.third_service_item::after{
+    display: none;
+}
+
+/*------- 第四個服務項目樣式設定 -------*/
+.four_service_item{
+    flex-direction: column;
+    margin-bottom: 130px;
+}
+.four_service_item_wrap{
+    width: 100%;
+    order: 2;
+}
+.four_service_item img{
+    width: 100%;
+    order: 1;
+}
+.four_service_item_wrap h3{
+    padding: 20px 0px 0px;
+    font-size: 25px;
+}
+.four_service_item_wrap p{
+    font-size: 16px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 10px;
+}
+.four_service_item_wrap a{
+    margin-top: 0;
+}
+.four_service_item::after{
+    display: none;
 }
 
 
-/* ======================================== */
+/* ------ 客戶回饋 -------*/
+.feedback_container::before{
+    display: none;
+}
+.feedback_container::after{
+    display: none;
+}
+/*------- text -------*/
 
+.feedback_container h3{
+    font-size: 25px;
+}
 
+/* card_item */
+.container_ul{
+    overflow: hidden;
+    gap: 15px;;
+}
+.li_feedback_content{
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+    flex-shrink: 0;
+    max-width: 60%;
+}
+.li_feedback_content .five_star{
+    font-size: 12px;
+}
 
-    /* header文字 */
-    .top_banner_wrap {
-        max-width: 414px;    
-    }
-    .top_banner_wrap_text{
-        width: 55%;
-        top: 115px;
-    }
-    .top_banner_wrap h1{
-        width: 100%;
-        font-size: 25px;
-        padding-top: 0;
-        margin-top: 0;
-    }
-    .top_banner_wrap span{
-        font-size: 25px;
-    }
-    .top_banner_wrap h2{
-        font-size: 16px;
-        width: 200px;
-        margin: 0 0 10px;
-    }
-    .button-48{
-        height: 30px;
-        width: 80px;
-        line-height: 30px;
-        padding: 0;
-        font-size: 5px;
-    }
+#splide02-slide02{
+    width: 30% ; 
+}
+.splide__list .splide__slide{
+    width: 30% !important;
+    margin-right: 0px;
+    gap: 10px;
+}
+.splide_mobile{
+    display: block;
+}
+.splide_desk{
+    display: none;
+}
 
-    /*------- firstsection_服務項目 -------*/
-    .first_service_item{
-        max-width: 414px;
+.splide__track{
+    display: flex;
+    justify-content: flex-start;
+}
+/*------- last-item -------*/
+.item6_wrap{
+    height: 200px;
+    width: 70%;
+}
+.item6_content{
+    height: 200px;
+    left: -17%;
+}
+.item6_content h3{
+    font-size: 25px;
+}
+.item6_content :last-child{
+    font-size: 20px;
+}
 
-        position: relative;/* 給標題定位 */
-    }
-    .first_service_text h3{
-        font-size: 22px;
-        margin: 20px 0 20px;
-        text-align: center;
-    }
+/*------- footer -------*/
 
-/*------- 控制第一個服務項目更換樣式 -------*/
-    .desk_close{
-        display: none;
-    }
-    .open_mobile{
-        display: block;
-    }
+}
+.col_link{
+    min-width: 177px;
+}
 
-/*------- 第一個服務項目樣式設定 -------*/
-    .open_mobile{
-        max-width: 414px;
-        display: flex;
-        
-    }
-    .open_mobile .first_service_item_group_card{
-        gap: 10px;
-        
-    }
-    .first_service_item_group_card img{
-        width: 100%;
-        background-color: rgba(0,0,0,0.5);
-    }
-
-/*------- 第二個服務項目樣式設定 -------*/
-    .second_service_text_group h2{
-        font-size: 25px;
-        margin-bottom: 0px
-    }
-    .second_service_text_group h4{
-        font-size: 20px;
-    }
-    
-    .second_service_item_group{
-        flex-direction: column;
-        width: 300px;
-        height: auto;
-        gap: 86px;
-    }
-    .second_service_item_wrap{
-        width: 100%;
-    }
-    .second_service_item_wrap h2{
-        margin-bottom: 0;
-    }
-    .second_service_item {
-        margin: 0 auto 100px
-    }
-    
-    /*------- 第三個服務項目樣式設定 -------*/
-    .third_service_item{
-        flex-direction: column;
-        margin-bottom: 130px;
-    }
-    .third_service_item_wrap{
-        width: 100%;
-        order: 2;
-    }
-    .third_service_item img{
-        width: 100%;
-        order: 1;
-    }
-    .third_service_item_wrap h3{
-        padding: 20px 0px 0px;
-        font-size: 25px;
-    }
-    .third_service_item_wrap p{
-        font-size: 16px;
-    }
-    .third_service_item_wrap a{
-        margin-top: 0;
-    }
-    .third_service_item::after{
-        display: none;
-    }
-
-    /*------- 第四個服務項目樣式設定 -------*/
-    .four_service_item{
-        flex-direction: column;
-        margin-bottom: 130px;
-    }
-    .four_service_item_wrap{
-        width: 100%;
-        order: 2;
-    }
-    .four_service_item img{
-        width: 100%;
-        order: 1;
-    }
-    .four_service_item_wrap h3{
-        padding: 20px 0px 0px;
-        font-size: 25px;
-    }
-    .four_service_item_wrap p{
-        font-size: 16px;
-        margin-left: 0;
-        margin-bottom: 0;
-        padding: 10px;
-    }
-    .four_service_item_wrap a{
-        margin-top: 0;
-    }
-    .four_service_item::after{
-        display: none;
-    }
-    
-
-    /* ------ 客戶回饋 -------*/
-    .feedback_container{
-    }
-
-    .feedback_container::before{
-        display: none;
-    }
-    .feedback_container::after{
-        display: none;
-    }
-    /*------- text -------*/
-    .textcontent{
-
-    }
-
-    .feedback_container h3{
-        font-size: 25px;
-    }
-    .textcontent h6{}
-
-    .textcontent p{}
-
-    /* card_item */
-    .container_ul{
-        overflow: hidden;
-        gap: 15px;;
-    }
-    .li_feedback_content{
-        margin-bottom: 50px;
-        padding-bottom: 15px;
-        flex-shrink: 0;
-        max-width: 60%;
-    }
-    .li_feedback_content .five_star{
-        font-size: 12px;
-    }
-    .li_feedback_content p{}
-    .li_feedback_content img{}
-    .li_feedback_content h4{}
-    .li_feedback_content h5{
-
-    #splide02-slide02{
-        width: 30% ; 
-    }
-    .splide__list .splide__slide{
-        width: 30% !important;
-        margin-right: 0px;
-        gap: 10px;
-    }
-    .splide_mobile{
-        display: block;
-    }
-    .splide_desk{
-        display: none;
-    }
-
-    .splide__track{
-        display: flex;
-        justify-content: flex-start;
-    }
-    /*------- last-item -------*/
-    .item6_wrapper{}
-    .item6_wrap{
-        height: 200px;
-        width: 70%;
-    }
-    .item6_content{
-        height: 200px;
-        left: -17%;
-    }
-    .item6_content h3{
-        font-size: 25px;
-    }
-    .item6_content :last-child{
-        font-size: 20px;
-    }
-    .item6_wrapper a{}
-
-    /*------- footer -------*/
-    .wrap_footer{}
-    .footer_container{
-
-    }
-    .col_link{
-        min-width: 177px;
-    }
-    .col_link h5{}
-    .col_link span{}
-    .col_link li{
-        max-width: 200px;
-    }
-    .col_link li a{}
-    .footer_container2{}
-    .footer_container2 h5{}
-    }
-
-    
+.col_link li{
+    max-width: 200px;
+}
