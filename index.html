@@ -40,13 +40,14 @@
                         <div class="main_nav">
                             <a href="./treatment_class.html" class="main_nav_item">
                                 <p class="p2_style">嚴選療程</p>
-                                <div class="sub_nav">
-                                    <a href="./treatment_content.html">經典SPA</a>
-                                    <a href="./treatment_content.html">美體塑身</a>
-                                    <a href="./treatment_content.html">護膚療程</a>
-                                    <a href="./treatment_content.html">男士療程</a>
-                                </div>
                             </a>
+                            <span><i class="bi bi-chevron-right"></i></span>
+                            <div class="sub_nav" id="sub_nav">
+                                <a href="./treatment_content.html">經典SPA</a>
+                                <a href="./treatment_content.html">美體塑身</a>
+                                <a href="./treatment_content.html">護膚療程</a>
+                                <a href="./treatment_content.html">男士療程</a>
+                            </div>
                         </div>
     
                         <div class="main_nav">
@@ -483,22 +484,27 @@
 <script>
     //輪播圖
     var splide = new Splide('.splide', {
-    type: 'loop',
-    perPage: 3,
-    autoplay: true
+        type: 'loop',
+        perPage: 3,
+        autoplay: true
     });
     var elms = document.getElementsByClassName('splide');
     for (var i = 0; i < elms.length; i++) {
-    new Splide(elms[i]).mount();
+        new Splide(elms[i]).mount();
     }
     // 點擊漢堡後出現子選單
     $(".menu-icon").on("click", function(){
         $(".main_nav_wrap").toggleClass("is-activeIn");
-        $(".main_nav .sub_nav").toggleClass(".main_nav #sub_nav_none");
-        
-        });
-        
-        $(".menu-icon").on("click", function(){
+    });
+    // 我有問題！！！！！！！！！！！！！！記得來改我
+    //點擊嚴選療程按鈕，出現療程內容
+    // $(".main_nav span").on("click", function(){
+    //     $("#sub_nav").toggle("#sub_nav_in");
+    //     console.log
+    // })
+
+    // 點擊選單後 body畫面固定   
+    $(".menu-icon").on("click", function(){
         $("body").toggleClass("overfloat");
     });
 </script>

@@ -1040,10 +1040,24 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
         margin-right: auto;
         padding-left: 20px;
     }
-    
-    
+    /* 登入及購物車icon */
+    .Register_Login_and_cart_shopping_wrap{
+        margin-left: 130px;
+    }
+    .Register_Login_and_cart_shopping_wrap :first-child{
+        margin-right: 10px;
+    }
+    /*------- 漢堡線 -------*/
+    .menu-icon i{
+        display: block;
+        margin: 10px 10px 0 10px;
+    }
+
+
+    /* 主選單 */
     .main_nav_wrap{
         display: flex;
+        /* display: none; */
         flex-direction: column;
         background-color: #FFFEF2;
         width: 100%;
@@ -1069,6 +1083,8 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
     .main_nav{
         width: 100%;
         height: 100vh;
+        justify-content: flex-start;
+        padding-left: 20px;
     }
     /*------- 遮色片 -------*/
     .overfloat{
@@ -1076,34 +1092,59 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
         height: 100%;
         width: 100%;
     }
+    /* 主選單的按鈕，按下出現子選單 */
+    .main_nav span{
+        font-size: 25px;
+        margin-left: 60%;
+    }
 
-    .main_nav .sub_nav{
-        display: block;
-        border-radius: 0;
-        background-color: #FFFEF2;
-        width: 100%;
-        border: 0;
-        
-        position: absolute;
-        top: 100px;
-        left: 0px;
+
+
+
+
+/* -------------- 我有問題！！！！！！ ------------ */
+
+/* ----- 子選單 ----- */
+#sub_nav{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    background-color: #FFFEF2;
+    width: 100%;
+    height: 404px;
+    border: 0;
+    transition: .5s;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* out */
+    transform: translateX(120%);
+    z-index: 30;
+}
+#sub_nav_in{
+    transform: translateX(0);
+}
+/* -------------- 我有問題！！！！！！ ------------ */
+
+
+
+
+
+
+    .sub_nav a{
+        height: 100px;
+        line-height: 100px;
+        padding-bottom: 0;
+        border-bottom: 1px solid #ccc;
     }
-    .main_nav #sub_nav_none{
-        transition: .5s;
-        transform: translateX(-120%);
-    }
-    .Register_Login_and_cart_shopping_wrap{
-        margin-left: 130px;
+    /* 子選單移入 */
+    .sub_nav_isActiceIn{
+        transform: translateX(0%) !important;
     }
     
-    .Register_Login_and_cart_shopping_wrap :first-child{
-        margin-right: 10px;
-    }
-    /*------- 漢堡線 -------*/
-    .menu-icon i{
-        display: block;
-        margin: 10px 10px 0 10px;
-    }
+    
+    
+    
 
     /* header文字 */
     .top_banner_wrap {

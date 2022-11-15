@@ -147,6 +147,7 @@ body{
     padding: 20px;
     margin: 50px auto 50px;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     gap: 50px;
 }
@@ -179,7 +180,8 @@ body{
 }
 .group2  p{
     background-color: #ded2c7;
-    height: 20px;
+    height: 30px;
+    line-height: 30px;
     width: 125px;
     margin-right: 10px;
     text-align: center;
