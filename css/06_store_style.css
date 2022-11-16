@@ -1,6 +1,8 @@
 @import url("reset.css");
 @import url("../css/font_style.css");
-
+html {
+    scroll-behavior: smooth;
+}
 body{
     background-color: #FFFEF2;
     line-height: 1.5;

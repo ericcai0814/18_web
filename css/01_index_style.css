@@ -1,7 +1,9 @@
 @import url("reset.css");
 @import url("../css/font_style.css");
-@import url("../css/header_footer.css");
-
+/* @import  url("../css/header_footer.css"); */
+html {
+    scroll-behavior: smooth;
+}
 body{
     background-color: #FFFEF2;
     line-height: 1.5;
@@ -89,6 +91,9 @@ body{
     text-align: center;
     transition: all .4s linear;
 }
+
+
+
 /* 選單hover變色 */
 .main_nav:hover, .Register_Login_and_cart_shopping_item:hover{
     background: #FFecd1;
@@ -104,14 +109,6 @@ body{
 .fa-solid{
     margin-right: 5px;
 }
-
-
-/* 選單移入按鈕，414p開啟 */
-.caret-left i{
-    display: none;
-}   
-
-
 
 .Register_Login_and_cart_shopping .menu-icon{
     padding: 10px;
@@ -158,6 +155,11 @@ body{
     width: 20%;
     display: none;/* 在RWD414px時顯示 */
 }
+
+
+/* 尚未設定html JS */
+/* JS控制選單移入 */
+
 
 
 
@@ -326,6 +328,8 @@ body{
     margin-bottom: 10px;    
     
 }
+
+
 
 .first_service_item_group_card h5{
     text-align: center;
@@ -1021,155 +1025,124 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
 
 
 @media screen and (max-width: 414px){
-
-/* ======================================= */
-/* ------- bannerBG ------- */
-.header_bg{
-    background-position: center;
-    object-fit: cover;
-    height: 240px;
-}
-/* ------- navigator ------- */
-/* 在990px就先讓選單到移到銀幕外待機 */
-.navigate{
-    position: relative;
-    box-sizing: border-box;
-    max-width: 414px;
-}
-.logo img{
-    width: 140px;
-    padding-top: 26px;
-    margin-right: auto;
-    padding-left: 20px;
-}
-/* 登入及購物車icon */
-.Register_Login_and_cart_shopping_wrap{
-    margin-left: 130px;
-}
-.Register_Login_and_cart_shopping_wrap :first-child{
-    margin-right: 10px;
-}
-/*------- 漢堡線 -------*/
-.menu-icon i{
-    display: block;
-    margin: 10px 10px 0 10px;
-}
+    /* ------- bannerBG ------- */
+    .header_bg{
+        background-position: center;
+        object-fit: cover;
+        height: 240px;
+    }
+    /* ------- navigator ------- */
+    /* 在990px就先讓選單到移到銀幕外待機 */
+    .navigate{
+        position: relative;
+        box-sizing: border-box;
+        max-width: 414px;
+    }
+    .logo img{
+        width: 140px;
+        padding-top: 26px;
+        margin-right: auto;
+        padding-left: 20px;
+    }
+    /* 登入及購物車icon */
+    .Register_Login_and_cart_shopping_wrap{
+        margin-left: 130px;
+    }
+    .Register_Login_and_cart_shopping_wrap :first-child{
+        margin-right: 10px;
+    }
+    /*------- 漢堡線 -------*/
+    .menu-icon i{
+        display: block;
+        margin: 10px 10px 0 10px;
+    }
 
 
-/* 選單的位移按鈕這裡開啟 */
-.caret-left i{
-    display: block;
+    /* 主選單 */
+    .main_nav_wrap{
+        display: flex;
+        /* display: none; */
+        flex-direction: column;
+        background-color: #FFFEF2;
+        width: 100%;
+        height: 400px;
+        border: 0;
+        box-shadow: 0 1px 20px #ccc;
+
+        z-index: 20;
+
+        position: absolute;
+        left: 0;
+        top: 77px;
+        transition: .5s;
+        transform: translateX(120%);
+        /* 目前在銀幕外待機 */
+    }
+
+    /*------- 因為權重要大於原本的class(選單位移進來) -------*/
+    .main_nav_wrap.is-activeIn {
+        transform: translateX(0);
+    }
+    /*------- 選單移入後的大小 -------*/
+    .main_nav{
+        width: 100%;
+        height: 100vh;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+    /*------- 遮色片 -------*/
+    .overfloat{
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+    }
+    /* 主選單的按鈕，按下出現子選單 */
+    .main_nav span{
+        font-size: 25px;
+        margin-left: 60%;
+    }
+
+
+/* ----- 子選單 ----- */
+.sub_nav{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    background-color: #FFFEF2;
+    width: 100%;
+    height: 404px;
+    border: 0;
+    transition: .5s;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 30;
+
+    transform: translateX(120%);
+}
+#sub_nav{
+    display: flex;
+}
+.sub_nav a{
+    height: 100px;
+    line-height: 100px;
+    padding-bottom: 0;
 }
 .sub_nav_item{
     display: flex;
     align-items: center;
 }
-
-
-/* 主選單 */
-.main_nav_wrap{
-    display: flex;
-    /* display: none; */
-    flex-direction: column;
-    background-color: #FFFEF2;
-    width: 100%;
-    height: 400px;
-    border: 0;
-    box-shadow: 0 1px 20px #ccc;
-
-    z-index: 20;
-
-    position: absolute;
-    left: 0;
-    top: 77px;
-    transition: .5s;
-    transform: translateX(120%);
-    /* 目前在銀幕外待機 */
-}
-
-/*------- 因為權重要大於原本的class(選單位移進來) -------*/
-.main_nav_wrap.is-activeIn {
-    transform: translateX(0);
-}
-/*------- 選單移入後的大小 -------*/
-.main_nav{
-    width: 100%;
-    height: 100vh;
-    justify-content: flex-start;
+#sub_nav a{
     padding-left: 20px;
 }
-
-/*------- 遮色片 -------*/
-.overfloat{
-    overflow: hidden;   
-    height: 100%;
-    width: 100%;
-}
-/* 主選單的按鈕，按下出現子選單 */
-.main_nav span{
-    font-size: 25px;
-    margin-left: 30%;
-}
-
-.main_nav a{
-    width: 50%;
-}
-.main_nav_caretLeft{
-    display: block;
-}
-
-/* ----- 子選單 ----- */
-
-.sub_nav{
-display: flex;
-flex-direction: column;
-border-radius: 0;
-background-color: #FFFEF2;
-width: 100%;
-height: 404px;
-border: 0;
-transition: .5s;
-position: absolute;
-top: 0px;
-left: 0px;
-z-index: 30;
-
-transform: translateX(120%);
-}
-.sub_nav_item:hover{
-background: #FFecd1;
-}
-
-#sub_nav{
-display: flex;
-}
-
-子選單
-.sub_nav_item{
-display: flex;
-align-items: center;
-}
-#sub_nav_item a{
-padding-left: 20px;
-}
-.sub_nav_item a{
-height: 100px;
-line-height: 100px;
-padding-bottom: 0;
-}
-
-/* 子選單的位移按鈕 */
 sub_nav_item span{
-font-size: 25px;
-margin-left: 60%;
+    font-size: 25px;
+    margin-left: 60%;
 }
 
 .main_nav .sub_nav_in{
-transform: translateX(0);
+    transform: translateX(0);
 }
-
-
-/* ======================================== */
 
 
 
@@ -1352,17 +1325,21 @@ transform: translateX(0);
         margin-bottom: 50px;
         padding-bottom: 15px;
         flex-shrink: 0;
-        max-width: 46%;
+        max-width: 60%;
     }
     .li_feedback_content .five_star{
         font-size: 12px;
     }
+    .li_feedback_content p{}
+    .li_feedback_content img{}
+    .li_feedback_content h4{}
+    .li_feedback_content h5{}
 
     #splide02-slide02{
-        width: 50% ; 
+        width: 30% ; 
     }
     .splide__list .splide__slide{
-        width: 68% !important;
+        width: 30% !important;
         margin-right: 0px;
         gap: 10px;
     }
@@ -1378,6 +1355,7 @@ transform: translateX(0);
         justify-content: flex-start;
     }
     /*------- last-item -------*/
+    .item6_wrapper{}
     .item6_wrap{
         height: 200px;
         width: 70%;
