@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/slick/slick-theme.css">
+    <link rel="stylesheet" href="./css/slick/slick.css">
     <link rel="stylesheet" href="./css/06_store_style.css">
     <title>AGENS_store</title>
 </head>
@@ -131,13 +133,12 @@
         </div><!-- firstContainer end -->
         
             <!---------- 環境圖片 ----------->
-            <ul class="store_pic">
-                <li class="item1"><img src="./sourse/06.store/pic2/second_pic2.png" alt=""></li>
-                <li class="item2"><img src="./sourse/06.store/pic2/second_pic1.png" alt=""></li>
-                <li class="item3"><img src="./sourse/06.store/pic2/second_pic3.png" alt=""></li>
+            
+            <ul class="slickContainer">
+                <li><img src="./sourse/06.store/pic2/second_pic1.png" alt=""></li>
+                <li><img src="./sourse/06.store/pic2/second_pic2.png" alt=""></li>
+                <li><img src="./sourse/06.store/pic2/second_pic3.png" alt=""></li>
             </ul>
-
-
 
             <!---------- 文字說明 ----------->
             <ul class="textContainer">
@@ -234,10 +235,9 @@
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="./js/animation.js"></script>
 <script src="./js/jquery-3.6.1.min.js"></script>
-<script src="./js/jquery-ui.min.js"></script>
-<script src="./js/splide.min.js"></script>
+<script src="./js/animation.js"></script>
+<script src="./js/slick.js"></script>
 <script>
     
     // 點擊漢堡後出現子選單
@@ -256,24 +256,15 @@
 
 
     //輪播  圖
-    var splide = new Splide( '.splide', {
-        perPage: 3,
-        gap    : '2rem',
-        breakpoints: {
-        640: {
-        perPage: 2,
-        gap    : '.7rem',
-        height : '6rem',
-        },
-        480: {
-        perPage: 1,
-        gap    : '.7rem',
-        height : '6rem',
-        },
-    },
-} );
-
-splide.mount();
+    
+    
+        $(".slickContainer").slick({
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            infinite: true,
+        })
+    
 
 
 </script>

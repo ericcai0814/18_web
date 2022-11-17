@@ -130,17 +130,23 @@ body{
     height: 300px;
 }
 
-.item1{
-    
+/* -------------環境輪播圖--------------- */
+
+.slickContainer{
+    width: 500px;
+    display: flex;
+    margin: 0 auto;
+    padding-inline-start: 0;
+}
+.slickContainer img{
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 12px;
+}
+.slick-prev, .slick-next{
+    height: 30px;
 }
 
-.item2{
-    
-}
-
-.item3{
-    
-}
 
 /* ------ left_text ------ */
 
