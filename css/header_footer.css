@@ -91,11 +91,15 @@ body{
 
 
 /* 選單移入按鈕，414p開啟 */
-.caret-left i{
+.main_nav span{
     display: none;
 }   
 
 
+/* 手機版子選單按鈕關掉，414px再開啟 */
+.sub_nav_item span{
+    display: none;
+}
 
 .Register_Login_and_cart_shopping .menu-icon{
     padding: 10px;
@@ -135,6 +139,9 @@ body{
     color: #fff;
     transition: .5s;
 }
+
+
+
 
 /* 購物車及會員登入 */
 .Register_Login_and_cart_shopping .menu-icon{
@@ -415,6 +422,7 @@ body{
 }
 /* 主選單的按鈕，按下出現子選單 */
 .main_nav span{
+    display: block;
     font-size: 25px;
     margin-left: 30%;
 }
@@ -444,6 +452,12 @@ body{
 
     transform: translateX(120%);
 }
+
+.sub_nav_item{
+    display: flex;
+    align-items: center;
+}
+
 .sub_nav_item:hover{
     background: #FFecd1;
 }
@@ -465,6 +479,10 @@ body{
     line-height: 100px;
     padding-bottom: 0;
 }
+.sub_nav > a{
+    display: none;
+}
+
 
 /* 子選單的位移按鈕 */
 sub_nav_item span{

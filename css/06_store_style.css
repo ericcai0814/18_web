@@ -240,9 +240,12 @@ body{
 }
 .firstContainer_wrapper_wrap_click{
     text-decoration: none;
-
     position: relative;
 }   
+
+.firstContainer_wrapper_wrap_click h5{
+    font-size: 20px;
+}
 
 .wrap .uunderline::before{
     content: "";

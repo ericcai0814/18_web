@@ -111,7 +111,7 @@ body{
     /* outline: 1px solid black; */
     text-align: center;
     margin-bottom: 30px;
-
+    font-size: 40px;
     position: relative;
 }
 /* 裝飾線 */
@@ -132,8 +132,8 @@ body{
     justify-content: center;
     gap: 50px;
 }
-.firstContainer_wrapper_wrap_click{
-    
+.firstContainer_wrapper_wrap_click h5{
+    font-size: 20px;
 }
 
 
@@ -171,6 +171,7 @@ body{
 }
 .Content_text h2{
     width: 100%;
+    font-size: 40px;
     margin-bottom: 30px;
 }
 .Content_text p{

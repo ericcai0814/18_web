@@ -105,6 +105,11 @@ body{
     position: relative;
 }
 
+/* 把手機版選單按鈕先關掉，414px在開啟 */
+.main_nav span{
+    display: none;
+}
+
 /* 漢堡線設定 */
 .fa-solid{
     margin-right: 5px;
@@ -1098,6 +1103,7 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
     }
     /* 主選單的按鈕，按下出現子選單 */
     .main_nav span{
+        display: block;
         font-size: 25px;
         margin-left: 60%;
     }
