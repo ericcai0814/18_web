@@ -12,216 +12,8 @@ body{
     width: 100%;
 }
 
-.breadcrumbList{
-    padding-top: 78.29px;
-    background:  #d2d1c2;
-}
-
-/* ============================== */
-/* ------------- middle --------- */
-/* ============================== */
 
 
-
-#middle{
-    width: 100%;
-    margin: 0 auto;
-    
-}
-/* <iframe width="560" height="315" src="https://www.youtube.com/embed/Ardq46CCOO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> */
-
-
-/* ------ 選擇療程服務 title ----- */
-
-.firstContainer{
-    /* outline: 1px solid black; */
-    max-width: 1280px;
-    margin: 0 auto 50px;
-}
-.wrapper{
-    /* outline: 1px solid black; */
-    width: 80%;
-    margin: 0 auto 100px;
-}
-.wrapper h3{
-    /* outline: 1px solid black; */
-    text-align: center;
-    margin-bottom: 30px;
-
-    position: relative;
-}
-/* 裝飾線 */
-.wrapper h1::after{
-    content: "";
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #333;
-
-    position: absolute;
-    bottom: -5px;
-    left: 48.5%;
-}
-.wrapper .wrap{
-    /* outline: 1px solid black; */
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-.firstContainer_wrapper_wrap_click{
-    text-decoration: none;
-
-    position: relative;
-}   
-
-.wrap .uunderline::before{
-    content: "";
-    display: block;
-    width: 0px;
-    height: 2px;
-    background: #fa0;
-
-    position: absolute;
-    top: 25px;
-    left: 0;
-    transition: .5s;
-}
-.firstContainer_wrapper_wrap_click:hover .underline::before{
-    content: "";
-    display: block;
-    width: 270px;
-    height: 2px;
-    background: #FFFEF2;
-
-    position: absolute;
-    top: 25px;
-    left: 0;
-}
-.short:hover .underline::before{
-    content: "";
-    display: block;
-    width: 220px;
-    height: 2px;
-    background: #F6F5E8;
-
-    position: absolute;
-    top: 25px;
-    left: 0;
-}
-
-/* -------------環境圖片--------------- */
-.store_pic{
-    width: 100%;
-    height: auto;
-    margin: 0 auto 100px;
-    /* outline: 5px solid black; */
-
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.store_pic li{
-    
-}
-.store_pic li img{
-    border-radius: 10px;
-    box-shadow: #ccc 0 0 20px;
-    height: 300px;
-}
-
-/* -------------環境輪播圖--------------- */
-
-.slickContainer{
-    width: 500px;
-    display: flex;
-    margin: 0 auto;
-    padding-inline-start: 0;
-}
-.slickContainer img{
-    margin: 0 auto;
-    width: 100%;
-    border-radius: 12px;
-}
-.slick-prev, .slick-next{
-    height: 30px;
-}
-
-
-/* ------ left_text ------ */
-
-.textContainer{
-    max-width: 1280px;
-    padding: 20px;
-    margin: 50px auto 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 50px;
-}
-.left_text{
-    margin: 0 auto 0;
-    padding: 30px;
-    width: 40%;
-    height: 430px; 
-    background-color: F6F5E8;
-
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.left_text h4{
-    text-align: start;
-    margin-bottom: 20px;
-}
-.left_text p{
-    text-align: start;
-    margin-bottom: 22px;
-    letter-spacing: 5px;
-    line-height: 1.6;
-}
-
-/* 控制服務項目及館內設備按鈕形狀 */
-.group2{
-    display: flex;
-}
-.group2  p{
-    background-color: #ded2c7;
-    height: 30px;
-    line-height: 30px;
-    width: 125px;
-    margin-right: 10px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-
-/* ------ right_text ------ */
-.right_text{
-    width: 25%;
-    line-height: 2.5;
-    padding: 20px;
-    height: 120px; 
-    flex-grow: 1;
-}
-
-.right_text p{
-    text-align: start;
-    margin-bottom: 15px;
-    width: 100%;
-}
-
-.right_text i{
-    display: inline-block;
-    width: 20px;
-    margin: 0;
-}
-iframe{
-    padding-top: 30px;
-}
-
-/* ------------- header and footer -------------*/
 
 /* 導覽列背景色 */
 .navigate_wrap{
@@ -357,6 +149,11 @@ iframe{
 /* ============= 麵包屑 ============ */
 /* ================================= */
 
+.breadcrumbList{
+    padding-top: 78.29px;
+    background:  #d2d1c2;
+}
+
 .breadcrumb{
     display: flex;
     margin-bottom: 50px;
@@ -389,6 +186,222 @@ iframe{
 .breadcrumb li a:hover{
     color: #ccc;
 }
+
+/* ============================== */
+/* ------------- middle --------- */
+/* ============================== */
+
+
+
+#middle{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+/* <iframe width="560" height="315" src="https://www.youtube.com/embed/Ardq46CCOO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> */
+
+
+/* ------ 選擇療程服務 title ----- */
+
+.firstContainer{
+    /* outline: 1px solid black; */
+    max-width: 1280px;
+    margin: 0 auto 50px;
+}
+.wrapper{
+    /* outline: 1px solid black; */
+    width: 80%;
+    margin: 0 auto 100px;
+}
+.wrapper h3{
+    /* outline: 1px solid black; */
+    text-align: center;
+    margin-bottom: 30px;
+
+    position: relative;
+}
+/* 裝飾線 */
+.wrapper h1::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+
+    position: absolute;
+    bottom: -5px;
+    left: 48.5%;
+}
+.wrapper .wrap{
+    /* outline: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.firstContainer_wrapper_wrap_click{
+    text-decoration: none;
+
+    position: relative;
+}   
+
+.wrap .uunderline::before{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #fa0;
+
+    position: absolute;
+    top: 25px;
+    left: 0;
+    transition: .5s;
+}
+.firstContainer_wrapper_wrap_click:hover .underline::before{
+    content: "";
+    display: block;
+    width: 270px;
+    height: 2px;
+    background: #FFFEF2;
+
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+.short:hover .underline::before{
+    content: "";
+    display: block;
+    width: 220px;
+    height: 2px;
+    background: #F6F5E8;
+
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+
+
+.service_store{
+    border-radius: 5px ;
+    background-color: #d2d1c2; 
+    width: 82%;
+    height: 50px;
+    margin-bottom: 30px;
+    border: 0;
+}
+
+/* -------------環境圖片--------------- */
+.store_pic{
+    width: 100%;
+    height: auto;
+    margin: 0 auto 100px;
+    /* outline: 5px solid black; */
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.store_pic li{
+    
+}
+.store_pic li img{
+    border-radius: 10px;
+    box-shadow: #ccc 0 0 20px;
+    height: 300px;
+}
+
+/* -------------環境輪播圖--------------- */
+
+.slickContainer{
+    width: 500px;
+    display: flex;
+    margin: 0 auto;
+    padding-inline-start: 0;
+}
+.slickContainer img{
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 12px;
+}
+.slick-prev, .slick-next{
+    height: 30px;
+}
+
+
+/* ------ left_text ------ */
+
+.textContainer{
+    max-width: 1280px;
+    padding: 20px;
+    margin: 50px auto 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50px;
+}
+.left_text{
+    margin: 0 auto 0;
+    padding: 30px;
+    width: 40%;
+    height: 430px; 
+    background-color: F6F5E8;
+
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left_text h4{
+    text-align: start;
+    margin-bottom: 20px;
+}
+.left_text p{
+    text-align: start;
+    margin-bottom: 22px;
+    letter-spacing: 5px;
+    line-height: 1.6;
+}
+
+/* 控制服務項目及館內設備按鈕形狀 */
+.group2{
+    display: flex;
+}
+.group2  p{
+    background-color: #ded2c7;
+    height: 30px;
+    line-height: 30px;
+    width: 125px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+/* ------ right_text ------ */
+.right_text{
+    width: 25%;
+    line-height: 2.5;
+    padding: 20px;
+    height: 120px; 
+    flex-grow: 1;
+}
+
+.right_text p{
+    text-align: start;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.right_text i{
+    display: inline-block;
+    width: 20px;
+    margin: 0;
+}
+iframe{
+    padding-top: 30px;
+}
+
 
 /* ========================================== */
 /* ------------------footer------------------ */
@@ -666,18 +679,9 @@ iframe{
         margin: 0 auto;
     }
 
-
     /* 輪播圖 */
-    .store_pic{
-        overflow: hidden;
-        height: auto;
-        gap: 20px;
-    }
-    .store_pic li{
-        flex-shrink: 0;
-    }
-    .store_pic li img{
-        width: 100%; 
+    .slickContainer{
+        width: 80%;
     }
 
     /* 文字區 */
