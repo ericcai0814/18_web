@@ -188,11 +188,32 @@ body{
 
 
 @media screen and (max-width: 1200px){
-   
+    .first_container_item{
+        height: auto;
+    }
 }
 
-@media screen and (max-width: 990px){
-    
+@media screen and (max-width: 1000px){
+.top_header_banner_text{
+    display: none;
+}
+/* h3 裝飾線 */
+.second_container li h3::before{
+    display: none;
+}
+.second_container li h3::after{
+    display: none;
+}
+.second_container ul{
+    gap: 30px;
+}
+
+.second_container li{
+    min-width: 300px;
+}
+.second_container li img{
+    width: 100%;
+}
 }
 @media screen and (max-width: 800px){
 }
@@ -202,6 +223,7 @@ body{
 
     /* header文字 */
     .top_header_banner_text{
+        display: block;
         top: 135px;
         width: auto;
     }

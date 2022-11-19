@@ -253,6 +253,7 @@ body{
 
     /* 甲方爸爸說滾到前面去 */
     .containerContent img {
+        border-radius: 12px;
         order: 1;
         width: 80%;
         margin: 0 auto;
