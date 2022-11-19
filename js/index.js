@@ -1,9 +1,12 @@
- //輪播圖
-  
-    var splide = new Splide( '.splide', {
-        type  : 'fade',
-        rewind: true,
-    } );
-    
-    splide.mount();
-    
+
+
+
+
+//輪播圖
+$(".slickContainer").slick({
+    dots: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+})

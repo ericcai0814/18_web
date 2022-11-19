@@ -31,17 +31,28 @@
                             <p class="p2_style">關於AG</p>
                         </a>
                     </div>
-    
+
                     <div class="main_nav">
                         <a href="./treatment_class.html" class="main_nav_item">
                             <p class="p2_style">嚴選療程</p>
-                            <div class="sub_nav">
+                        </a>
+                        <span class="caret-left"><i class="bi bi-caret-left"></i></span>
+                        <div class="sub_nav" id="sub_nav">
+                            <a href="#"></a>
+                            <div class= "sub_nav_item">
                                 <a href="./treatment_content.html">經典SPA</a>
+                                <span><i class="bi bi-caret-right"></i></span>
+                            </div class="sub_nav_item">
+                            <div class="sub_nav_item">
                                 <a href="./treatment_content.html">美體塑身</a>
+                            </div class="sub_nav_item">
+                            <div class="sub_nav_item">
                                 <a href="./treatment_content.html">護膚療程</a>
+                            </div class="sub_nav_item">
+                            <div class="sub_nav_item">
                                 <a href="./treatment_content.html">男士療程</a>
                             </div>
-                        </a>
+                        </div>
                     </div>
     
                     <div class="main_nav">
@@ -260,18 +271,9 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./js/animation.js"></script>
 <script src="./js/jquery-3.6.1.min.js"></script>
-<script src="./js/splide.min.js"></script>
-<script>
-    
-    // 點擊漢堡後出現子選單
-    $(".menu-icon").on("click", function(){
-        $(".main_nav_wrap").toggleClass("is-activeIn");
-        });
-    
-        $(".menu-icon").on("click", function(){
-        $("body").toggleClass("overfloat");
-    });
-</script>
+<script src="./js/navigator.js"></script>
+<script src="./js/treament_class.js"></script>
+
 
 </body>
 </html>

@@ -38,13 +38,24 @@
                     <div class="main_nav">
                         <a href="./treatment_class.html" class="main_nav_item">
                             <p class="p2_style">嚴選療程</p>
-                            <div class="sub_nav">
+                        </a>
+                        <span class="caret-left"><i class="bi bi-caret-left"></i></span>
+                        <div class="sub_nav" id="sub_nav">
+                            <a href="#"></a>
+                            <div class= "sub_nav_item">
                                 <a href="./treatment_content.html">經典SPA</a>
+                                <span><i class="bi bi-caret-right"></i></span>
+                            </div class="sub_nav_item">
+                            <div class="sub_nav_item">
                                 <a href="./treatment_content.html">美體塑身</a>
+                            </div class="sub_nav_item">
+                            <div class="sub_nav_item">
                                 <a href="./treatment_content.html">護膚療程</a>
+                            </div class="sub_nav_item">
+                            <div class="sub_nav_item">
                                 <a href="./treatment_content.html">男士療程</a>
                             </div>
-                        </a>
+                        </div>
                     </div>
     
                     <div class="main_nav">
@@ -111,16 +122,11 @@
 
     <!------ 選擇療程服務 title ------>
             <div class="wrapper" >
-                <h3 class="h3_style">服務據點</h3>
+                <h3 class="h3_style">台中日月潭雲品</h3>
                 <div class="wrap">
                     <item>
                         <a href="./store.html" class="firstContainer_wrapper_wrap_click button-83">
                             <h5 class="h5_style">台北香格里拉遠東大飯店</h5>
-                        </a>
-                    </item>
-                    <item>
-                        <a href="./store_second.html" class="firstContainer_wrapper_wrap_click short button-83">
-                            <h5 class="h5_style">台中日月潭雲品酒店</h5>
                         </a>
                     </item>
                     <item>
@@ -241,27 +247,9 @@
 <script src="./js/jquery-3.6.1.min.js"></script>
 <script src="./js/animation.js"></script>
 <script src="./js/slick.js"></script>
+<script src="./js/navigator.js"></script>
+<script src="./js/store.js"></script>
 <script>
-    
-    // 點擊漢堡後出現子選單
-    $(".menu-icon").on("click", function(){
-        $(".main_nav_wrap").toggleClass("is-activeIn");
-        });
-    
-        $(".menu-icon").on("click", function(){
-        $("body").toggleClass("overfloat");
-    });
-
-
-    //輪播  圖
-    
-    
-        $(".slickContainer").slick({
-            dots: true,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            infinite: true,
-        })
     
 
 
