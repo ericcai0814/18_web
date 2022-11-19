@@ -636,6 +636,7 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
     align-items: center;
     border: 1px solid black;
     border-radius: 20px;
+    margin-left: 65px;
 }
 .li_feedback_content p{
     padding: 10px;
@@ -658,6 +659,10 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
 
 
 /*------------ 輪播圖 -------------*/
+ul.slickContainer2{
+    display: none;
+}
+
 .splide__slide{
     display: flex;
     justify-content: center;
@@ -690,6 +695,7 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
     align-items: center;
     width: 100%;
     margin-bottom: 100px;
+    margin-top: 100px;
     /* outline: 2px solid black; */
 }
 
@@ -1305,8 +1311,6 @@ sub_nav_item span{
     
 
     /* ------ 客戶回饋 -------*/
-    .feedback_container{
-    }
 
     .feedback_container::before{
         display: none;
@@ -1314,17 +1318,16 @@ sub_nav_item span{
     .feedback_container::after{
         display: none;
     }
-    /*------- text -------*/
-    .textcontent{
-
-    }
-
     .feedback_container h3{
         font-size: 25px;
     }
-    .textcontent h6{}
-
-    .textcontent p{}
+    /* ------ 輪播圖 ------ */
+    ul.slickContainer1{
+        display: none;
+    }
+    ul.slickContainer2{
+        display: block;
+    }
 
     /* card_item */
     .container_ul{
@@ -1335,15 +1338,12 @@ sub_nav_item span{
         margin-bottom: 50px;
         padding-bottom: 15px;
         flex-shrink: 0;
-        max-width: 60%;
+        width: auto;
+        margin-left: 40px;
     }
     .li_feedback_content .five_star{
         font-size: 12px;
     }
-    .li_feedback_content p{}
-    .li_feedback_content img{}
-    .li_feedback_content h4{}
-    .li_feedback_content h5{}
 
     #splide02-slide02{
         width: 30% ; 
@@ -1365,7 +1365,6 @@ sub_nav_item span{
         justify-content: flex-start;
     }
     /*------- last-item -------*/
-    .item6_wrapper{}
     .item6_wrap{
         height: 200px;
         width: 70%;
@@ -1380,24 +1379,15 @@ sub_nav_item span{
     .item6_content :last-child{
         font-size: 20px;
     }
-    .item6_wrapper a{}
 
     /*------- footer -------*/
-    .wrap_footer{}
-    .footer_container{
-
-    }
     .col_link{
         min-width: 177px;
     }
-    .col_link h5{}
-    .col_link span{}
+    
     .col_link li{
         max-width: 200px;
     }
-    .col_link li a{}
-    .footer_container2{}
-    .footer_container2 h5{}
 }
 
 
