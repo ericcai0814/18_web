@@ -15,9 +15,8 @@ $(".slickContainer1").slick({
                 slidesToShow: 1
             }
         }
-        ],
+    ],
 })
-
 
 /* 手機版輪播圖 */
 
@@ -41,4 +40,10 @@ $(window).scroll(function() {
 $("#toTop").click(function() {
     $("html, body").animate({scrollTop: 0}, 500);
 });
-    
+
+const nav_Height = ($(".navigate_wrap").height());
+console.log(wHeight);
+
+if(slidesToScroll > nav_Height){
+    $(".navigate_wrap").css("display", "none").css()
+}

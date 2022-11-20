@@ -36,6 +36,9 @@ body{
     position: fixed;
     z-index: 999;
 }
+/* . */
+
+
 /* 主導覽列位置及寬度 */
 .navigate{
     max-width: 1280px;
