@@ -133,7 +133,7 @@ body{
     width: 100%;
     left: 0px;
     top: 77px;
-    background-color: #ee9d52b8;
+    background-color: #ebc8a8b8;
     border-radius: 0px 0px 10px 10px ;
 
     z-index: 20;
@@ -641,7 +641,7 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
 .li_feedback_content p{
     padding: 10px;
     font-size: 1rem;
-    text-align: start;
+    text-align: justify;
 }
 
 .li_feedback_content img{
@@ -737,6 +737,21 @@ ul.slickContainer2{
     margin-top: 80px;
     display: block;
     font-size: 20px;
+}
+
+
+/* ------ scroll_top ------*/
+#toTop{
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+
+    color: #dddcd0;
+    font-size: 50px;
+}
+#toTop:hover{
+    color: #FFAA00;
+    cursor: pointer;
 }
 
 /* ========================================== */

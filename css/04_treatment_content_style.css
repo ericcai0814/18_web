@@ -136,10 +136,6 @@ body{
     font-size: 20px;
 }
 
-
-
-
-
 /* service item  */
 
 .service_container{
@@ -185,10 +181,24 @@ body{
     width: 100px;
 }
 
+/* ------ scroll_top ------*/
+#toTop{
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+
+    color: #dddcd0;
+    font-size: 50px;
+}
+#toTop:hover{
+    color: #FFAA00;
+    cursor: pointer;
+}
+
 
 
 @media screen and (max-width: 1200px){
-   
+
 }
 
 @media screen and (max-width: 990px){

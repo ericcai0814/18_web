@@ -1,7 +1,3 @@
-
-
-
-
 //輪播圖
 $(".slickContainer1").slick({
     dots: true,
@@ -32,3 +28,17 @@ $(".slickContainer2").slick({
     autoplay: true,
     autoplaySpeed: 2000,
 })
+
+// scroll_top 
+$(window).scroll(function() {
+    if ($(this).scrollTop()) {
+        $('#toTop').fadeIn();
+    } else {
+        $('#toTop').fadeOut();
+    }
+});
+
+$("#toTop").click(function() {
+    $("html, body").animate({scrollTop: 0}, 500);
+});
+    

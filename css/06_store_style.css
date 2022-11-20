@@ -110,18 +110,7 @@ body{
     display: none;/* 在RWD414px時顯示 */
 }
 
-/* ----------- 控制子選單位置 -----------*/
-.sub_nav{
-    display: none; /* 在選單hover時顯示sub_nav */
-    position: absolute;
-    width: 100%;
-    left: 0px;
-    top: 77px;
-    background-color: #ee9d52b8;
-    border-radius: 0px 0px 10px 10px ;
 
-    z-index: 20;
-}
 
 .main_nav:hover .sub_nav{
     display: block;
@@ -150,11 +139,6 @@ body{
 /* ================================= */
 /* ============= 麵包屑 ============ */
 /* ================================= */
-
-.breadcrumbList{
-    padding-top: 78.29px;
-    background:  #d2d1c2;
-}
 
 .breadcrumb{
     display: flex;
@@ -405,6 +389,20 @@ body{
 }
 iframe{
     padding-top: 30px;
+}
+
+/* ------ scroll_top ------*/
+#toTop{
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+
+    color: #dddcd0;
+    font-size: 50px;
+}
+#toTop:hover{
+    color: #FFAA00;
+    cursor: pointer;
 }
 
 

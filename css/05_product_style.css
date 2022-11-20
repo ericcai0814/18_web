@@ -102,8 +102,6 @@ body{
     /* overflow: hidden; */
 }
 
-
-
 .text_content{
     display: flex;
     flex-direction: column;
@@ -174,14 +172,24 @@ body{
     background-color: #f9d9ac;
 }
 
+/* ------ scroll_top ------*/
+#toTop{
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+
+    color: #dddcd0;
+    font-size: 50px;
+}
+#toTop:hover{
+    color: #FFAA00;
+    cursor: pointer;
+}
 
 
 @media screen and (max-width: 1200px){
-
 }
-
 @media screen and (max-width: 990px){
-    
 }
 @media screen and (max-width: 800px){
 }
