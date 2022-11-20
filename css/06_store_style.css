@@ -624,12 +624,10 @@ iframe{
             width: auto;
         }
         /*------- 麵包屑 -------*/
-        .breadcrumbList{}
 
         .breadcrumbList .container{
             max-width: 414px;
         }
-        .breadcrumb{}
 
         .breadcrumb li{
             font-size: 16px;
@@ -708,5 +706,8 @@ iframe{
     }
     left_text :last-child p{
         height: 40px;
+    }
+    .group2  p{
+        height: auto;
     }
 }

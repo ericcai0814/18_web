@@ -294,7 +294,7 @@ body{
     margin-bottom: 10px;
 }
 .footer_container2 h5{
-    font-size: 16px;    
+    font-size: 15px;    
 }
 
 
@@ -365,7 +365,7 @@ body{
 }
 /* 登入及購物車icon */
 .Register_Login_and_cart_shopping_wrap{
-    margin-left: 130px;
+    margin-left: 100px;
 }
 .Register_Login_and_cart_shopping_wrap :first-child{
     margin-right: 10px;
