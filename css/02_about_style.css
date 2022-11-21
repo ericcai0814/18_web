@@ -264,9 +264,7 @@ body{
     .second_container li{
         width: auto;
     }
-    .second_container li img{
-
-    }
+    
     .second_container li h3{
         width: 100%;
         font-size: 25px;
@@ -280,12 +278,6 @@ body{
     .second_container li h3::after {
         right: 40px;
     }
-
-
-
-
-
-
 
 }
 

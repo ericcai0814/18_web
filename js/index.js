@@ -37,13 +37,17 @@ $(window).scroll(function() {
     }
 });
 
+
+// scrollTop
 $("#toTop").click(function() {
     $("html, body").animate({scrollTop: 0}, 500);
 });
 
+
+/*
 const nav_Height = ($(".navigate_wrap").height());
 console.log(wHeight);
 
-if(slidesToScroll > nav_Height){
+if(window.scroll() > nav_Height){
     $(".navigate_wrap").css("display", "none").css()
-}
+}*/

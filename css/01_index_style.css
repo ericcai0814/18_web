@@ -1397,6 +1397,10 @@ sub_nav_item span{
     .item6_content :last-child{
         font-size: 20px;
     }
+    /* ------ scroll top ----- */
+    #toTop{
+        font-size: 40px;
+    }
 
     /*------- footer -------*/
     .col_link{
@@ -1406,6 +1410,8 @@ sub_nav_item span{
     .col_link li{
         max-width: 200px;
     }
+
+    
 }
 
 
