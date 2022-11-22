@@ -504,6 +504,7 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
     width: 50%;
     text-align: justify;
     padding: 10px;
+    font-size: 16px;
 }
 .third_service_item_wrap a{
     margin-top: 50px;
@@ -563,6 +564,7 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
     text-align: justify;
     margin-left: 30px;
     margin-bottom: 50px;
+    font-size: 16px;
 }
 
 
@@ -600,7 +602,11 @@ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../sour
 .feedback_container{
     max-width: 1280px;
     align-items: center;
-    margin: 150px auto 150px;
+    margin: 200px auto 150px;
+}
+/*------ 拉開下面item距離吃 -------*/
+.slick-dotted.slick-slider{
+    margin-bottom: 160px;
 }
 /* ------------------- feedback_title --------------- */
 .textcontent{
@@ -1357,7 +1363,7 @@ sub_nav_item span{
         padding-bottom: 15px;
         flex-shrink: 0;
         width: auto;
-        margin-left: 61px;
+        margin-left: 80px;
     }
     .li_feedback_content .five_star{
         font-size: 12px;
