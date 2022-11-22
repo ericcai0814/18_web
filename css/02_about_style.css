@@ -270,6 +270,10 @@ body{
     .second_container li{
         width: auto;
     }
+
+    div.second_container li img{
+        border-radius: 0;
+    }
     
     .second_container li h3{
         width: 100%;

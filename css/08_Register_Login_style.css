@@ -305,7 +305,7 @@ body{
     width: 100%;
     left: 0px;
     top: 77px;
-    background-color: #ee9d52b8;
+    background-color: #ebc8a8b8;
     border-radius: 0px 0px 10px 10px ;
 
     z-index: 20;
@@ -641,6 +641,7 @@ body{
     }
     .wrapper .left_text{
         width: auto;
+        margin-right: 80px;
     }
     .left_text_wrap{
         width: auto;
