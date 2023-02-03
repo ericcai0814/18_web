@@ -89,7 +89,7 @@ body{
     display: flex;
     justify-content:center;
     align-items: center; 
-    flex-grow: 1;
+    /* flex-grow: 1; */
     width: 90%;
     text-align: center;
     transition: all .4s linear;
@@ -207,7 +207,7 @@ body{
 .top_banner_wrap h2{
     font-weight: 600;
     width: 600px;
-    margin: 20px 0 30px;
+    margin: 20px 0 10px;
     padding-left: 20px;
     font-size: 30px;
     letter-spacing: 6px;
@@ -276,14 +276,14 @@ body{
 /* 服務項目_控制大小方向 */
 .first_service_item{
     max-width: 1280px;
-    margin: 0 auto 180px;
+    margin: 0 auto 90px;
 }
 /* 服務項目_title */
 .first_service_text{
     position: relative;
 }
 .first_service_text h3{
-    margin-top: 180px;
+    margin-top: 70px;
     margin-bottom: 50px;
 }
 /* 裝飾線 */
@@ -737,7 +737,7 @@ ul.slickContainer2{
 }
 .item6_content h3{
     padding-top: 15px;
-    font-size: 6vmin;
+    font-size: 5vmin;
     line-height: 1.5;
     /* outline: 2px solid black; */
 }
@@ -916,11 +916,6 @@ ul.slickContainer2{
     }
     
 
-    /*------- 控制漢堡線到最右邊 -------*/
-    .menu-icon{
-        margin-left: auto;
-    }
-    
     /*------- 讓登入及購物車的文字消失 -------*/
     .Register_Login_and_cart_shopping_item_main_nav p{
         display: none;
@@ -929,7 +924,7 @@ ul.slickContainer2{
     /*------- 漢堡線 -------*/
     .menu-icon i{
         display: block;
-        margin: 10px 10px 0 50px;
+        margin: 10px 10px 0px 0px;
     }
     .Register_Login_and_cart_shopping_item_main_nav i{
         font-size: 20px;
