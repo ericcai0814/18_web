@@ -1,4 +1,5 @@
 # 18_web
+https://ericcai0814.github.io/18_web/
 - 使用Illustrator 及 Photoshop 設計網站LOGO及樣式
 - 使用Figma設計wireframe&Mockup 。
 - 使用HTML、CSS切板，並使用JavaScript
